@@ -121,7 +121,9 @@ jQuery(document).ready(function($) {
 $("#slide").responsiveSlides({
       auto: false,
       nav: true,
-      namespace: "centered-btns"
+      namespace: "centered-btns",
+      prevText: " ",   // String: Text for the "previous" button
+      nextText: " ",
 });
 
 

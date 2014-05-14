@@ -1,5 +1,6 @@
 .sidebar{
 	@include gridle(4);
+	margin-top: 20px;
 	.zone_300x250{
 		@include gridle_centered();
 		width:300px;

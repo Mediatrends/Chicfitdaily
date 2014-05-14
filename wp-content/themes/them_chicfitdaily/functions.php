@@ -206,5 +206,4 @@ and be up and running in seconds.
 add_action('wp_print_styles', 'bones_fonts');
 
 
-
 /* DON'T DELETE THIS CLOSING TAG */ ?>

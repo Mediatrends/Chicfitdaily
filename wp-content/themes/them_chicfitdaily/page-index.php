@@ -28,24 +28,35 @@
 
 			<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-		        <li id="post-<?php the_ID(); ?>" <?php post_class( '' ); ?> role="article">
+		        <li id="post-<?php the_ID(); ?>" <?php post_class( '' ); ?> role="article" style="background-image:url('<?php the_field('img_post'); ?>');">
 		          <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+						<div class="category">
+							
+							<?php
+								$posttags = get_the_tags();
+								$count=0;
+								if ($posttags) {
+								  foreach($posttags as $tag) {
+								    $count++;
+								    if (1 == $count) {
+								      echo $tag->name . ' ';
+								    }
+								  }
+								}
+							?>
+
+						</div>
 						
-						<h2><?php echo get_the_title(); ?></h2>
+						<div class="fecha">
+							
+							<?php echo get_the_date('j'); ?>
+							<br>
+							<span><?php echo get_the_date('M'); ?></span>
 
-						<?php 
- 
-						$image = get_field('img_post');
-						 
-						if( !empty($image) ): ?>
-						 
-							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-						 
-						<?php endif; ?>
+						</div>
 
-						<?php echo get_the_date('j'); ?>
-						<br>
-						<?php echo get_the_date('M'); ?>
+						<div class="tit"><span><?php echo get_the_title(); ?></span></div>
+
 					</a>
 		        </li>
 
@@ -61,12 +72,10 @@
       </ul>
 		
 	</div>
-
-	
 	<?php 
 		
 	// the query
-	$the_query = new WP_Query('category_name=fitness,wellness,tips,moda'); ?>
+	$the_query = new WP_Query('category_name=fitness,wellness,tips,moda,comida-sana'); ?>
 	
 	<?php if ( $the_query->have_posts() ) : ?>
 

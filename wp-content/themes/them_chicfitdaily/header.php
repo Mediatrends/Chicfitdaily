@@ -44,7 +44,7 @@
 	</head>
 
 	<body <?php body_class(); ?>>
-
+	<?php include (TEMPLATEPATH . '/svg_cont.php'); ?>
 		<div id="container">
 
 			<header class="header" role="banner">
@@ -79,7 +79,11 @@
 						
 						<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 						<div class="logo">
-							<a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a>
+							<a href="<?php echo home_url(); ?>" rel="nofollow">
+								<svg viewBox="0 0 655.586 172.639">
+									<use xlink:href="#svg_logo">
+								</svg>
+							</a>
 						</div>
 						<div class="ad_header">
 							<div class="zone_728x90"></div>

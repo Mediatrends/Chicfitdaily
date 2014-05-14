@@ -7,7 +7,7 @@
 	<?php 
 		
 	// the query
-	$the_query = new WP_Query('showpost=1&category_name=destacado'); ?>
+	$the_query = new WP_Query('posts_per_page=1&category_name=destacado&order=DESC'); ?>
 	
 	<?php if ( $the_query->have_posts() ) : ?>
 
