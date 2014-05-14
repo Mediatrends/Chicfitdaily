@@ -1,0 +1,38 @@
+.header{
+	@include gridle_parent();
+	nav{
+		@include gridle_parent();
+		border-bottom:1px solid $pri_color;
+		.cont_menu{
+			@extend .content;
+			ul{
+				@extend .inline;
+				@include gridle(9);
+				font:{
+					family:$font_hammer;
+				}
+			}
+			.search{
+				@include gridle(3);
+			}
+		}
+	}
+	.cont_subt_top{
+		@extend .content;
+		@include gridle_parent();
+		.logo{
+			@include gridle(4);
+		}
+		.ad_header{
+			@include gridle(8);
+			.zone_728x90{
+				width:728px;
+				height: 90px;
+				@include gridle_centered();
+				background:{
+					color:#f90;
+				}
+			}
+		}
+	}
+}

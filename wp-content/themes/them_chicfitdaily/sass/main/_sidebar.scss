@@ -1,0 +1,11 @@
+.sidebar{
+	@include gridle(4);
+	.zone_300x250{
+		@include gridle_centered();
+		width:300px;
+		height:250px;
+		background:{
+			color:#f90;
+		}
+	}
+}

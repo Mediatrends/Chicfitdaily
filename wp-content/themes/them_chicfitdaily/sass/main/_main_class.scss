@@ -1,0 +1,65 @@
+//Text Align
+.text-center{
+	text-align:$text-center;
+}
+.text-left{
+	text-align:$text-left;
+}
+.text-right{
+	text-align:$text-right;
+}
+//Padding y Margins
+.paddings{
+	padding:0 !important;
+}
+.margins{
+	margin:0 !important;
+}
+
+//hidden visible
+.visible{
+	visibility:$visible;
+}
+.hidden{
+	visibility:$hidden;
+}
+.hide{
+	display:$hide;
+}
+//Responsive img
+.responsive-img{
+	display:block;
+	width:100%;
+}
+
+//Menu inline
+.inline{
+	list-style:none;
+	@extend .paddings;
+	@extend .margins;
+	li{
+		display:$inline;
+	}
+}
+//Container set
+.content{
+	@include gridle_container();
+	@include gridle_centered();
+	max-width:1170px;
+}
+//Sticky Footer
+.footer{
+	p{
+		font:{
+			family:$font_fjalla;
+			size:14px;
+		}
+		a{
+			color: #000;
+			text:{
+				decoration:none;
+			}
+		}
+	}
+}
+@include sticky-footer(270px, "#container", "#push", "#footer");

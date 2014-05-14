@@ -1,0 +1,20 @@
+.footer{
+	@include gridle_parent();
+	background:{
+		color:#000;
+	}
+	nav{
+		@include gridle_parent();
+		border-bottom:1px solid $pri_color;
+		.cont_menu{
+			@extend .content;
+			ul{
+				@extend .inline;
+				@include gridle(9);
+			}
+			.search{
+				@include gridle(3);
+			}
+		}
+	}
+}
