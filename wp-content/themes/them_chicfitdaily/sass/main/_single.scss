@@ -1,6 +1,7 @@
 .single{
 	@include gridle_centered();
 	@include gridle(10);
+	@include gridle(11, tablet);
 	background:{color:#fff;}
 	margin-top: 204px;
 	.cont_post_single{
@@ -11,6 +12,7 @@
 			h2{
 				color:$pri_color;
 				font:{size:45px;family:$font_fjalla;}
+				text:{transform:uppercase};
 			}
 		}
 	}

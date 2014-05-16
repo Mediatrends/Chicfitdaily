@@ -3,6 +3,7 @@
 	margin-top: 20px;
 	.ad_content{
 		@include gridle(12);
+		@include gridle_hide(tablet);
 		margin: 20px 0;
 		.zone_728x90{
 			width:728px;
@@ -12,7 +13,7 @@
 			@include opacity(.3);
 		}
 	}
-	.slide{
+	#slide{
 		@include gridle(12);
 		@include gridle_parent();
 		height:442px;
@@ -95,22 +96,24 @@
 				}
 			}
 		}
-		.prev{
-			display: block;
-			width:73px;
-			height: 73px;
-			background:{color:$pri_color;}
-			margin-right: 75px;
-			margin-top:-100px;
-			@include gridle_float(right);
-			position: relative;
-			z-index: 9;
-			background:{image:url(#{$url_path}flechas_slide.gif);repeat:no-repeat;position: 27px center;}
-		}
-		.next{
-			@extend .prev;
-			margin-right: 0;
-			background:{position: -20px center;}
+		.bx-controls-direction{
+			.bx-prev{
+				display: block;
+				width:73px;
+				height: 73px;
+				background:{color:$pri_color;}
+				margin-right: 75px;
+				margin-top:-100px;
+				@include gridle_float(right);
+				position: relative;
+				z-index: 9;
+				background:{image:url(#{$url_path}flechas_slide.gif);repeat:no-repeat;position: 27px center;}
+			}
+			.bx-next{
+				@extend .bx-prev;
+				margin-right: 0;
+				background:{position: -20px center;}
+			}
 		}
 	}
 	.reciente{
@@ -200,4 +203,8 @@
 	background:{color:rgba(0,0,0,.8);}
 	z-index: 99999;
 	@extend .hide;
+	.push{
+		@include gridle_clear(both);
+		height: 100px;
+	}
 }

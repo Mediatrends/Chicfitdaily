@@ -16,10 +16,10 @@
 <?php get_header(); ?>
 
 <section class="cont_post">
-	
-	<section class="slide">
 
-		<ul class="rslides" id="slide">
+	<section id="slide">
+
+		<ul class="rslides">
 		
 			<?php 
 				// the query
@@ -30,7 +30,8 @@
 					<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
 				        <li id="post-<?php the_ID(); ?>" <?php post_class( '' ); ?> style="background-image:url('<?php the_field('img_post'); ?>');">
-				          <a class="post-link" href="<?php the_permalink() ?>" rel="<?php the_ID(); ?>" title="<?php the_title_attribute(); ?>">
+				          <!--a class="post-link" href="<?php the_permalink() ?>" rel="<?php the_ID(); ?>" title="<?php the_title_attribute(); ?>"-->
+				          <a class="post-link" href="<?php the_permalink() ?>" rel="single" title="<?php the_title_attribute(); ?>">
 								<div class="category">
 									
 									<?php
@@ -91,7 +92,7 @@
 						
 					<div id="post-<?php the_ID(); ?>" <?php post_class( 'post' ); ?> r>
 						
-						<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+						<a class="post-link" href="<?php the_permalink() ?>" rel="single" rel="bookmark" title="<?php the_title_attribute(); ?>">
 							
 							<div class="post_img" style="background-image:url('<?php the_field('img_post'); ?>');">
 								

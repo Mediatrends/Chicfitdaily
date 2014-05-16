@@ -1,11 +1,15 @@
 <?php
- 
+
     $post = get_post($_POST['id']);
- 
+
 ?>
 
 <section class="single">
+<div class="cerrar" onClick="window.history.back()">
+	
+	x
 
+</div>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 		<?php
@@ -47,3 +51,4 @@
                 
 <div class="clear"></div>
 </section>
+<div class="push"></div>

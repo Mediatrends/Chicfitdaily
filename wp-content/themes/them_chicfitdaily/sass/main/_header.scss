@@ -69,6 +69,7 @@
 		}
 		.ad_header{
 			@include gridle(8);
+			@include gridle_hide(tablet);
 			.zone_728x90{
 				width:728px;
 				height: 90px;
