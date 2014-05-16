@@ -1,5 +1,6 @@
 .footer{
 	@include gridle_parent();
+	@include gridle_clear();
 	background:{
 		color:#000;
 	}
@@ -7,14 +8,64 @@
 		@include gridle_parent();
 		border-bottom:1px solid $pri_color;
 		.cont_menu{
-			@extend .content;
 			ul{
 				@extend .inline;
 				@include gridle(9);
-			}
-			.search{
-				@include gridle(3);
+				font:{family:$font_hammer;size:14px;}
+				a{
+					display: block;
+					color:#fff;
+					height: 37px;
+					padding:25px 25px 0;
+					text:{decoration:none;}
+					&:hover{
+						background:{color:$pri_color;}
+						color:#fff;
+					}
+				}
 			}
 		}
+	}	
+	.us{
+		@include gridle(3);
+		margin-top:20px;
+		h4{
+			font:{size:20px;family:$font_fjalla;}
+			text:{transform:uppercase;}
+			color:$pri_color;
+			margin-bottom:10px;
+		}
+		p{
+			font:{size:11px;family:$font_hammer;}
+			color:#fff;
+		}
+	}
+	.contact{
+		@extend .us;
+		ul{
+			@extend .inline;
+			font:{size:10px;family:$font_hammer;}
+			color: #fff;
+			li{
+				@include gridle(6);
+				margin-bottom: 10px;
+				span{
+					font:{weight:bold;size:12px;}
+				}
+			}
+		}
+	}
+	.share{
+		@extend .us;
+		ul{
+			@extend .inline;
+			li{
+				width:42px;
+				height:47px;
+			}
+		}
+	}
+	.newsletter{
+		@extend .us;
 	}
 }

@@ -45,7 +45,7 @@
 
 	<body <?php body_class(); ?>>
 	<?php include (TEMPLATEPATH . '/svg_cont.php'); ?>
-		<div id="container">
+		<main id="container">
 
 			<header class="header" role="banner">
 
@@ -95,4 +95,4 @@
 					</div>
 
 			</header>
-			<div class="content">
+			<article class="content">

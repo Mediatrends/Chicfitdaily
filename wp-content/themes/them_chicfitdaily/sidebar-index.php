@@ -1,37 +1,46 @@
-<div id="sidebar1" class="sidebar" role="complementary">
+<section id="sidebar1" class="sidebar" role="complementary">
 
-	<div class="zone_300x250"></div>
+	<section class="zone_300x250"></section>
 	
-	<h2>DESTACADOS</h2>
+	<section class="descatado">
 
-	<?php 
+		<h2>DESTACADOS</h2>
+
+		<?php
+		// the query
+		$the_query = new WP_Query('posts_per_page=1&category_name=destacado&order=DESC'); ?>
 		
-	// the query
-	$the_query = new WP_Query('posts_per_page=1&category_name=destacado&order=DESC'); ?>
-	
-	<?php if ( $the_query->have_posts() ) : ?>
+		<?php if ( $the_query->have_posts() ) : ?>
 
-	<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-			
-		<article id="post-<?php the_ID(); ?>" <?php post_class( 'post' ); ?> role="article">
-			
-			<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+			<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+					
+				<section id="post-<?php the_ID(); ?>" <?php post_class( 'post' ); ?> role="article">
+					
+					<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+						
+						<div class="post_img" style="background-image:url('<?php the_field('img_post'); ?>');"></div>
+
+						<h3><?php echo get_the_title(); ?></h3>
+
+						<?php the_excerpt(); ?>
+					</a>
+					<?php the_tags( '<ul class="tags"><li>',' ','</li></ul>' ); ?>
+
+					<div class="more">
+						<a href="<?php the_permalink() ?>"></a>
+					</div>
+
+				</section>
 				
-				<h2> <?php echo get_the_title(); ?> </h2>
+		<?php endwhile; ?>
+		  <!-- end of the loop -->
+		  <!-- pagination here -->
 
-				<?php the_excerpt(); ?>
-			</a>
+			<?php wp_reset_postdata(); ?>
 
-		</article>
-			
-	<?php endwhile; ?>
-	  <!-- end of the loop -->
-	  <!-- pagination here -->
+			<?php else:  ?>
+			<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+		<?php endif; ?>
+	</section>
 
-	<?php wp_reset_postdata(); ?>
-
-	<?php else:  ?>
-	  <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-	<?php endif; ?>
-
-</div>
+</section>

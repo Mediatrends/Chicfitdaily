@@ -118,13 +118,23 @@ jQuery(document).ready(function($) {
     duration: 1000
   });*/
 
-$("#slide").responsiveSlides({
-      auto: false,
-      nav: true,
-      namespace: "centered-btns",
-      prevText: " ",   // String: Text for the "previous" button
-      nextText: " ",
-});
+  $("#slide").responsiveSlides({
+        auto: false,
+        nav: true,
+        namespace: "centered-btns",
+        prevText: " ",   // String: Text for the "previous" button
+        nextText: " ",
+  });
+
+  $.ajaxSetup({cache:false});
+  $(".post-link").click(function(){
+      var post_link = $(this).attr("href");
+
+      $("#single_post").html("content loading");
+      $("#single_post").fadeIn(500).load(post_link);
+
+  return false;
+  });
 
 
 }); /* end of as page load scripts */
