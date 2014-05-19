@@ -113,55 +113,11 @@ jQuery(document).ready(function($) {
   */
   loadGravatars();
 
-  $('#slide').bxSlider({
-    pager: false
+  $("#slide ul").responsiveSlides({
+    nav: true,
+    prevText: "",
+    nextText: ""
   });
 
- /*$.ajaxSetup({cache:false});
-  $(".post-link").click(function(){
-      var post_link = $(this).attr("href");
-
-      $("#single_post").html("content loading");
-      $("#single_post").fadeIn(500).load(post_link);
-
-  return false;
-  });*/
-
-  $(".post-link[rel='single']").click(function(e){
-    //e.preventDefault();
-    /*
-    if uncomment the above line, html5 nonsupported browers won't change the url but will display the ajax content;
-    if commented, html5 nonsupported browers will reload the page to the specified link.
-    */
-
-    //get the link location that was clicked
-    pageurl = $(this).attr('href');
-
-    //to get the ajax content and display in div with id 'content'
-    $.ajax({url:pageurl+'?rel=single',success: function(data){
-      $('#single_post').fadeIn(1000).html(data);
-    }});
-
-    //to change the browser URL to the given link location
-    if(pageurl!=window.location){
-      window.history.pushState({path:pageurl},'',pageurl);
-    }
-    //stop refreshing to the page given in
-    return false;
-  });
-
-  $(window).bind('popstate', function() {
-    $.ajax({url:location.pathname+'?rel=single',success: function(data){
-      $('#single_post').hide().html(data);
-      }});
-  });
-
-  /*$("#slide").responsiveSlides({
-        auto: false,
-        nav: true,
-        namespace: "centered-btns",
-        prevText: " ",   // String: Text for the "previous" button
-        nextText: " ",
-  });*/
 
 }); /* end of as page load scripts */

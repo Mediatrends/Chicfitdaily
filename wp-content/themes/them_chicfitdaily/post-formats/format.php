@@ -13,8 +13,21 @@
                  * folder and replace the function below with the contents of the "format.php" file.
                 */
               ?>
+              
+              <div class="cerrar" onclick="window.history.back();">
+    
+                <div>x</div>
+
+              </div>
+              <div class="share">
+                
+                <?php echo do_shortcode('[ssba]'); ?>
+
+              </div>
+
 
               <section id="post-<?php the_ID(); ?>" <?php post_class('cont_post_single'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+                
 
                 <header class="article-header">
 
@@ -22,18 +35,21 @@
 
                 </header> <?php // end article header ?>
 
-                <section class="entry-content cf" itemprop="articleBody">
+                <section class="entry-content" itemprop="articleBody">
                   
 
                   <img src="<?php the_field('img_post'); ?>" alt="" class="responsive-img">
                   
-                  <p>
-                   <?php the_tags( '<ul class="tags"><li>',' ','</li></ul>' ); ?>
-                  </p>
-                  <p>
+
+                  <div class="meta">
+                    
+                    <?php the_tags( '<ul class="tags"><li>',' ','</li></ul>' ); ?>
+
                     <?php //printf( __( '<time class="updated" datetime="%1$s" pubdate>%2$s</time> <!--by <span class="author">%3$s</span-->', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), get_the_author_link( get_the_author_meta( 'ID' ) )); ?>
-                    <?php echo get_the_date('j/m/Y'); ?>
-                  </p>
+                    
+                    <div class="fecha"><?php echo get_the_date('j / m / Y'); ?></div>
+
+                  </div>
 
                 
                   <?php
@@ -73,5 +89,8 @@
                   <?php comments_template(); ?>
                 </div>
                 
+                <div class="ad_content">
+                  <div class="zone_728x90"></div>
+                </div>
 
               </section> <?php // end article ?>

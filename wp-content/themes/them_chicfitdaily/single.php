@@ -1,15 +1,7 @@
-<?php
-
-    $post = get_post($_POST['id']);
-
-?>
-
+<?php get_header(); ?>
 <section class="single">
-<div class="cerrar" onClick="window.history.back()">
-	
-	x
 
-</div>
+
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 		<?php
@@ -33,7 +25,7 @@
 
 	<?php else : ?>
 
-		<section id="post-not-found" class="hentry cf">
+		<section id="post-not-found" class="hentry">
 				<header class="article-header">
 					<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
 				</header>
@@ -51,4 +43,6 @@
                 
 <div class="clear"></div>
 </section>
-<div class="push"></div>
+
+<?php get_footer(); ?>
+

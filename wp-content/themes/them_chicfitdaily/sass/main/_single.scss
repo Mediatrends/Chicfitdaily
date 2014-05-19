@@ -1,9 +1,31 @@
 .single{
-	@include gridle_centered();
-	@include gridle(10);
+	@include gridle_parent();
+	@include gridle(12);
 	@include gridle(11, tablet);
 	background:{color:#fff;}
-	margin-top: 204px;
+	.cerrar{
+		background:{
+			color:$pri_color;
+		}
+		@include gridle_float(right);
+		display: tablet;
+		color:#fff;
+		width:40px;
+		height: 39px;
+		text:{align:center;}
+		margin-left: 10px;
+		div{
+			width:40px;
+			height: 40px;
+			display: table-cell;
+			vertical-align: middle;
+			font:{family:$font_hammer;}
+		}
+	}
+	.share{
+		width: 500px;
+		@include gridle_float(right);
+	}
 	.cont_post_single{
 		@include gridle(8);
 		@include gridle_clear(both);
@@ -15,8 +37,53 @@
 				text:{transform:uppercase};
 			}
 		}
+		.meta{
+			margin:10px 0;
+			width: 100%;
+			@include gridle_clear(both);
+			.tags{
+				@include gridle_float(left);
+				margin-top:5px;
+				li{
+					@extend .inline;
+					a{
+						text:{transform:uppercase;decoration:none;}
+						font:{size:18px;family:$font_fjalla;style:italic;}
+						color: #fff;
+						padding:2px 5px;
+						background:{color:$pri-color;}
+					}
+				}
+			}
+			.fecha{
+				@include gridle_float(left);
+				margin-left:10px;
+				font:{size:18px;family:$font_fjalla;style:italic;}
+				color: #fff;
+				padding:5px 5px;
+				background:{color:$pri-color;}
+			}
+		}
+		p{
+			@include gridle_clear(both);
+			padding-top:10px;
+			font:{size:12px;family:$font_hammer;}
+		}
+		.ad_content{
+			@include gridle(12);
+			@include gridle_hide(tablet);
+			margin: 20px 0;
+			.zone_728x90{
+				width:728px;
+				height: 90px;
+				@include gridle_centered();
+				background:{color:#f90;}
+				@include opacity(.3);
+			}
+		}
 	}
 	.clear{
+		height: 100px;
 		@include gridle_clear(both);
 	}
 }

@@ -18,9 +18,7 @@
 <section class="cont_post">
 
 	<section id="slide">
-
-		<ul class="rslides">
-		
+		<ul>
 			<?php 
 				// the query
 				$the_query = new WP_Query('category_name=slide'); ?>
@@ -30,8 +28,8 @@
 					<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
 				        <li id="post-<?php the_ID(); ?>" <?php post_class( '' ); ?> style="background-image:url('<?php the_field('img_post'); ?>');">
-				          <!--a class="post-link" href="<?php the_permalink() ?>" rel="<?php the_ID(); ?>" title="<?php the_title_attribute(); ?>"-->
-				          <a class="post-link" href="<?php the_permalink() ?>" rel="single" title="<?php the_title_attribute(); ?>">
+								
+							<a class="post-link" href="<?php the_permalink() ?>" rel="single" rel="bookmark" title="<?php the_title_attribute(); ?>">
 								<div class="category">
 									
 									<?php
@@ -60,6 +58,7 @@
 								<div class="tit"><span><?php echo substr(the_title($before = '', $after = '', FALSE), 0, 40); ?></span></div>
 
 							</a>
+								
 				        </li>
 
 				    <?php endwhile; ?>
@@ -71,8 +70,7 @@
 				<?php else:  ?>
 				<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 			<?php endif; ?>
-      	</ul>
-		
+		</ul>
 	</section>
 	
 	<section class="reciente">
@@ -134,5 +132,3 @@
 <?php get_sidebar('index'); ?>
 
 <?php get_footer(); ?>
-
-<div id="single_post"></div>

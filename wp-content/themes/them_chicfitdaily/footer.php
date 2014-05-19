@@ -50,28 +50,28 @@
 						<li>
 							<a href="" target="_blank">
 								<svg viewBox="3 4 60 60">
-									<use xlink:href="#svg_facebook">
+									<use xlink:href="#svg_facebook"/>
 								</svg>
 							</a>
 						</li>
 						<li>
 							<a href="" target="_blank">
 								<svg viewBox="3 4 60 60">
-									<use xlink:href="#svg_twitter">
+									<use xlink:href="#svg_twitter"/>
 								</svg>
 							</a>
 						</li>
 						<li>
 							<a href="" target="_blank">
 								<svg viewBox="0 0 128 128">
-									<use xlink:href="#svg_pinterest">
+									<use xlink:href="#svg_pinterest"/>
 								</svg>
 							</a>
 						</li>
 						<li>
 							<a href="" target="_blank">
 								<svg viewBox="3 4 60 60">
-									<use xlink:href="#svg_instagram">
+									<use xlink:href="#svg_instagram"/>
 								</svg>
 							</a>
 						</li>
@@ -92,7 +92,6 @@
 		<?php // all js scripts are loaded in library/bones.php ?>
 		<?php wp_footer(); ?>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/responsiveslides.min.js"></script>
-		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.bxslider.min.js"></script>
 	</body>
 
 </html> <!-- end of site. what a ride! -->

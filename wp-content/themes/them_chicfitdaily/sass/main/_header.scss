@@ -65,6 +65,9 @@
 				width:100%;
 				position: relative;
 				height: auto;
+				@media screen and (-webkit-min-device-pixel-ratio:0) {
+					height: 98px;
+				}
 			}
 		}
 		.ad_header{

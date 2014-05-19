@@ -81,7 +81,7 @@
 						<div class="logo">
 							<a href="<?php echo home_url(); ?>" rel="nofollow">
 								<svg viewBox="0 0 655.586 172.639">
-									<use xlink:href="#svg_logo">
+									<use xlink:href="#svg_logo"/>
 								</svg>
 							</a>
 						</div>
