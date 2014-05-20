@@ -53,6 +53,32 @@
 		</script>
 		<?php // end analytics ?>
 
+		<?php //TAG DOUBLECLICK ?>
+
+		<script type='text/javascript'>
+		var googletag = googletag || {};
+		googletag.cmd = googletag.cmd || [];
+		(function() {
+		var gads = document.createElement('script');
+		gads.async = true;
+		gads.type = 'text/javascript';
+		var useSSL = 'https:' == document.location.protocol;
+		gads.src = (useSSL ? 'https:' : 'http:') + 
+		'//www.googletagservices.com/tag/js/gpt.js';
+		var node = document.getElementsByTagName('script')[0];
+		node.parentNode.insertBefore(gads, node);
+		})();
+		</script>
+
+		<script type='text/javascript'>
+		googletag.cmd.push(function() {
+		googletag.defineSlot('/20099485/Chic_INX_content', [728, 90], 'div-gpt-ad-1400624644223-0').addService(googletag.pubads());
+		googletag.defineSlot('/20099485/Chic_INX_header', [728, 90], 'div-gpt-ad-1400624644223-1').addService(googletag.pubads());
+		googletag.defineSlot('/20099485/Chic_INX_sidebar', [300, 250], 'div-gpt-ad-1400624644223-2').addService(googletag.pubads());
+		googletag.enableServices();
+		});
+		</script>
+
 	</head>
 
 	<body <?php body_class(); ?>>
@@ -98,7 +124,16 @@
 							</a>
 						</div>
 						<div class="ad_header">
-							<div class="zone_728x90"></div>
+							<div class="zone_728x90">
+								
+								<!-- Chic_INX_header -->
+								<div id='div-gpt-ad-1400624644223-1' style='width:728px; height:90px;'>
+								<script type='text/javascript'>
+								googletag.cmd.push(function() { googletag.display('div-gpt-ad-1400624644223-1'); });
+								</script>
+								</div>
+								
+							</div>
 						</div>
 						
 						<?php // if you'd like to use the site description you can un-comment it below ?>

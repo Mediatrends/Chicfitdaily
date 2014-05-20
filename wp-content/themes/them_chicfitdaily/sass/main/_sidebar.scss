@@ -10,7 +10,6 @@
 		height:250px;
 		margin:0 auto;
 		background:{color:$ad_color;}
-		@include opacity(.3);
 	}
 	.descatado{
 		@include gridle(12);

@@ -3312,9 +3312,7 @@ html.mobile .header .cont_subt_top .ad_header {
   margin-left: auto !important;
   margin-right: auto !important;
   clear: both !important;
-  background-color: #333333;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
-  opacity: 0.3; }
+  background-color: #333333; }
 
 .cont_post {
   float: left;
@@ -3364,9 +3362,7 @@ html.mobile .cont_post {
   margin-left: auto !important;
   margin-right: auto !important;
   clear: both !important;
-  background-color: #333333;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
-  opacity: 0.3; }
+  background-color: #333333; }
 @media only all and (max-width: 47.9375em) {
   .cont_post .ad_content .zone_728x90 {
     display: none !important; } }
@@ -3616,9 +3612,7 @@ html.mobile .sidebar {
   width: 300px;
   height: 250px;
   margin: 0 auto;
-  background-color: #333333;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
-  opacity: 0.3; }
+  background-color: #333333; }
 html.tablet .sidebar .zone_300x250 {
   display: none; }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
@@ -3875,7 +3869,8 @@ html.mobile .cont_single nav .cerrar {
   vertical-align: middle;
   font-family: "Hammersmith One", "sans-serif"; }
 .cont_single nav .share {
-  float: right; }
+  float: right;
+  width: 600px; }
 html.mobile .cont_single nav .share {
   margin: 10px auto;
   float: none !important; }

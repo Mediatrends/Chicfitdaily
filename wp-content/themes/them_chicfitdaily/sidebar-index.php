@@ -1,6 +1,15 @@
 <section id="sidebar1" class="sidebar" role="complementary">
 
-	<section class="zone_300x250"></section>
+	<section class="zone_300x250">
+		
+		<!-- Chic_INX_sidebar -->
+		<div id='div-gpt-ad-1400624644223-2' style='width:300px; height:250px;'>
+		<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1400624644223-2'); });
+		</script>
+		</div>
+
+	</section>
 	
 	<section class="descatado">
 

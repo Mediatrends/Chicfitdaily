@@ -30,6 +30,7 @@
 		}
 		.share{
 			@include gridle_float(right);
+			width:600px;
 			@include gridle_state(mobile) {
 				margin:10px auto;
 				float: none !important;
