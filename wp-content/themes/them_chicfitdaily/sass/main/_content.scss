@@ -13,6 +13,7 @@
 			@include opacity(.3);
 			@include breakpoint(medium){display:none !important;}
 			@include breakpoint(large){display:none !important;}
+			@include breakpoint(xlarge){display:block !important;}
 		}
 	}
 	#slide{

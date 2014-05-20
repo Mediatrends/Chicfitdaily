@@ -72,12 +72,14 @@
 			<?php endif; ?>
 		</ul>
 	</section>
+
+	<div class="ad_content">
+		<div class="zone_728x90"></div>
+	</div>
 	
 	<section class="reciente">
 		
-		<div class="ad_content">
-			<div class="zone_728x90"></div>
-		</div>
+		
 
 		<h2>LO MAS RECIENTE</h2>
 		<?php

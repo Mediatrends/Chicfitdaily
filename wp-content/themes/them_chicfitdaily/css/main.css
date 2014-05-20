@@ -3373,6 +3373,9 @@ html.mobile .cont_post {
 @media only all and (min-width: 48em) {
   .cont_post .ad_content .zone_728x90 {
     display: none !important; } }
+@media only all and (min-width: 80.0625em) {
+  .cont_post .ad_content .zone_728x90 {
+    display: block !important; } }
 .cont_post #slide {
   float: left;
   direction: ltr;
