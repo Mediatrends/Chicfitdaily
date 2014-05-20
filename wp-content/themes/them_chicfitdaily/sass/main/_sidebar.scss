@@ -1,13 +1,15 @@
 .sidebar{
 	@include gridle(4);
+	@include gridle(12, mobile);
 	margin-top: 20px;
+	padding-bottom: 10px;
 	.zone_300x250{
-		@include gridle_centered();
+		@include gridle_hide(tablet);
+		@include gridle_hide(mobile);
 		width:300px;
 		height:250px;
-		background:{
-			color:#f90;
-		}
+		margin:0 auto;
+		background:{color:$ad_color;}
 		@include opacity(.3);
 	}
 	.descatado{

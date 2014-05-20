@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<section class="single">
+<section class="cont_single">
 
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>

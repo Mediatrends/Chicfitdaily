@@ -1,16 +1,18 @@
 .cont_post{
 	@include gridle(8);
+	@include gridle(12, mobile);
 	margin-top: 20px;
 	.ad_content{
 		@include gridle(12);
-		@include gridle_hide(tablet);
 		margin: 20px 0;
 		.zone_728x90{
 			width:728px;
 			height: 90px;
 			@include gridle_centered();
-			background:{color:#f90;}
+			background:{color:$ad_color;}
 			@include opacity(.3);
+			@include breakpoint(medium){display:none !important;}
+			@include breakpoint(large){display:none !important;}
 		}
 	}
 	#slide{
@@ -125,6 +127,7 @@
 		}
 		.post{
 			@include gridle(6);
+			@include gridle(12, mobile);
 			margin-bottom: 20px;
 			max-height:332px;
 			a{

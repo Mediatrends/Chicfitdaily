@@ -8,6 +8,7 @@
 		@include gridle_parent();
 		border-bottom:1px solid $pri_color;
 		.cont_menu{
+			@include gridle_hide(mobile);
 			ul{
 				@extend .inline;
 				@include gridle(9);
@@ -28,6 +29,7 @@
 	}	
 	.us{
 		@include gridle(3);
+		@include gridle(12, mobile);
 		margin-top:20px;
 		h4{
 			font:{size:20px;family:$font_fjalla;}
@@ -42,13 +44,15 @@
 	}
 	.contact{
 		@extend .us;
+		@include gridle_hide(mobile);
 		ul{
 			@extend .inline;
 			font:{size:10px;family:$font_hammer;}
 			color: #fff;
 			li{
 				@include gridle(6);
-				margin-bottom: 10px;
+				@include gridle_parent();
+				padding-bottom: 10px;
 				span{
 					font:{weight:bold;size:12px;}
 				}
@@ -60,12 +64,14 @@
 		ul{
 			@extend .inline;
 			li{
-				width:42px;
-				height:47px;
+				width: 15%;
+				height: auto;
+				svg{max-height: 15%;}
 			}
 		}
 	}
 	.newsletter{
 		@extend .us;
+		@include gridle_hide(mobile);
 	}
 }

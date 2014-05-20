@@ -119,5 +119,9 @@ jQuery(document).ready(function($) {
     nextText: ""
   });
 
+  var nav = responsiveNav(".cont_menu", {
+    label: " "
+  });
+
 
 }); /* end of as page load scripts */

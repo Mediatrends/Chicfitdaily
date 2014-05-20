@@ -790,8 +790,8 @@ $_gridle-state-15-classes 			: true !default;
 // Register default states :
 @mixin gridle_register_default_states() {
 	// register mobile and tablet states :
-	@include gridle_register_state("mobile",null,480px);
-	@include gridle_register_state("tablet",481px,1024px);
+	@include gridle_register_state("mobile",null,767px);
+	@include gridle_register_state("tablet",768px,1280px);
 }
 
 

@@ -9,8 +9,13 @@
 			ul{
 				@extend .inline;
 				@include gridle(9);
+				@include gridle(12,mobile);
 				font:{family:$font_hammer;size:14px;}
-				a{
+				li{
+					@include gridle_state(mobile){
+						width: 100%;
+					}
+					a{
 					display: block;
 					color:#000;
 					height: 37px;
@@ -21,13 +26,17 @@
 						color:#fff;
 					}
 				}
+				}
 			}
 			.search{
 				@include gridle(3);
+				@include gridle(4,tablet);
+				@include gridle_hide(mobile);
+				@include gridle_hide(tablet);
 				form{
 					padding-top: 20px;
 					label{
-						margin-right:20px;
+						//margin-right:20px;
 						span{
 							@extend .hide;
 						}
@@ -54,6 +63,13 @@
 				}
 			}
 		}
+		.nav-toggle{
+			@include gridle_float(right);
+			margin:5px;
+			width: 30px;
+			height: 30px;
+			background:{image:url('#{$url_path}icon_menu.svg');size:cover;repeat:no-repeat;position:center;}
+		}
 	}
 	.cont_subt_top{
 		@extend .content;
@@ -61,6 +77,7 @@
 		margin-top:20px;
 		.logo{
 			@include gridle(4);
+			@include gridle(12, mobile);
 			svg{
 				width:100%;
 				position: relative;
@@ -73,11 +90,12 @@
 		.ad_header{
 			@include gridle(8);
 			@include gridle_hide(tablet);
+			@include gridle_hide(mobile);
 			.zone_728x90{
 				width:728px;
 				height: 90px;
 				@include gridle_centered();
-				background:{color:#f90;}
+				background:{color:$ad_color;}
 				@include opacity(.3);
 			}
 		}

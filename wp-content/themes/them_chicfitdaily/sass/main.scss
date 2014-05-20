@@ -1,9 +1,9 @@
 //FRAMEWORK
+@import "compass";
+
 @import "grid-settings";
 // Generate classes :
 @include gridle_generate_classes();
-
-@import "compass";
 
 @import "main/responsive";
 

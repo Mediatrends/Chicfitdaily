@@ -14,7 +14,8 @@
                 */
               ?>
               
-              <div class="cerrar" onclick="window.history.back();">
+            <nav>
+                <div class="cerrar" onclick="window.history.back();">
     
                 <div>x</div>
 
@@ -24,6 +25,7 @@
                 <?php echo do_shortcode('[ssba]'); ?>
 
               </div>
+            </nav>
 
 
               <section id="post-<?php the_ID(); ?>" <?php post_class('cont_post_single'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
