@@ -4,9 +4,9 @@
 		
 		<!-- Chic_INX_sidebar -->
 		<div id='div-gpt-ad-1400624644223-2' style='width:300px; height:250px;'>
-		<script type='text/javascript'>
-		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1400624644223-2'); });
-		</script>
+			<script type='text/javascript'>
+			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1400624644223-2'); });
+			</script>
 		</div>
 
 	</section>

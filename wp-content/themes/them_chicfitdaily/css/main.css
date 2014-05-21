@@ -3869,8 +3869,7 @@ html.mobile .cont_single nav .cerrar {
   vertical-align: middle;
   font-family: "Hammersmith One", "sans-serif"; }
 .cont_single nav .share {
-  float: right;
-  width: 600px; }
+  float: right; }
 html.mobile .cont_single nav .share {
   margin: 10px auto;
   float: none !important; }
@@ -3979,6 +3978,7 @@ html.mobile .cont_single .cont_post_single header h2 {
 .gridle-debug .cont_single .cont_post_single .ad_content.parent:before, .cont_single .cont_post_single .ad_content.gridle-debug.parent:before {
   content: "grid-parent--12"; }
 .cont_single .cont_post_single .ad_content .zone_728x90 {
+  display: none !important;
   width: 728px;
   height: 90px;
   display: block !important;

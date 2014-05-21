@@ -72,9 +72,15 @@
 
 		<script type='text/javascript'>
 		googletag.cmd.push(function() {
-		googletag.defineSlot('/20099485/Chic_INX_content', [728, 90], 'div-gpt-ad-1400624644223-0').addService(googletag.pubads());
 		googletag.defineSlot('/20099485/Chic_INX_header', [728, 90], 'div-gpt-ad-1400624644223-1').addService(googletag.pubads());
 		googletag.defineSlot('/20099485/Chic_INX_sidebar', [300, 250], 'div-gpt-ad-1400624644223-2').addService(googletag.pubads());
+		googletag.enableServices();
+		});
+		</script>
+		<script type='text/javascript'>
+		googletag.cmd.push(function() {
+		googletag.defineSlot('/20099485/Chic_INX_content', [728, 90], 'div-gpt-ad-1400628702893-0').addService(googletag.pubads());
+		googletag.pubads().enableSingleRequest();
 		googletag.enableServices();
 		});
 		</script>
@@ -132,7 +138,7 @@
 								googletag.cmd.push(function() { googletag.display('div-gpt-ad-1400624644223-1'); });
 								</script>
 								</div>
-								
+
 							</div>
 						</div>
 						
