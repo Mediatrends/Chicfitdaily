@@ -1,10 +1,6 @@
 .cont_post{
-	@include gridle(8);
-	@include gridle(12, mobile);
-	@include gridle(12, tablet);
-	@include responsive('width:1280px'){
-		@include gridle(8);
-	}
+	@include gridle(12, xs sm);
+	@include gridle(8, md);
 	margin-top: 20px;
 	.ad_content{
 		@include gridle(12);
@@ -12,16 +8,10 @@
 		.zone_728x90{
 			width:728px;
 			height: 90px;
-			@include gridle_centered(desktop);
-			@include gridle_state(mobile){
+			@include gridle_state(xs){
 				@include gridle_hide();
 			}
-			@include gridle_state(tablet){
-				@include gridle_hide();
-			}
-			@include responsive('width:1280px'){
-				display:block !important;
-			}
+			@include gridle_centered(sm md);
 		}
 	}
 	#slide{
@@ -135,8 +125,8 @@
 			margin:20px 0;
 		}
 		.post{
-			@include gridle(6);
-			@include gridle(12, mobile);
+			@include gridle(12, xs sm);
+			@include gridle(6, md);
 			margin-bottom: 20px;
 			max-height:332px;
 			a{

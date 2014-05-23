@@ -1,3 +1,18 @@
+//LOAD
+main{
+	@extend .hide;
+}
+footer{
+	@extend .hide;
+}
+//MOBILE FIRST
+@include gridle_register_state( xs, "(max-width : 640px)");
+@include gridle_register_state( sm , "(min-width : 641px)");
+@include gridle_register_state( md, "(min-width : 1280px)");
+@include gridle_register_state( lg, "(min-width : 1281px)");
+
+//WEBKIT
+@include gridle_register_state(webkit_brw, "screen and (-webkit-min-device-pixel-ratio:0)");
 //Text Align
 .text-center{
 	text-align:$text-center;

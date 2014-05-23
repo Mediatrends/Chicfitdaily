@@ -8,7 +8,7 @@
 		@include gridle_parent();
 		border-bottom:1px solid $pri_color;
 		.cont_menu{
-			@include gridle_hide(mobile);
+			@include gridle_hide(xs);
 			ul{
 				@extend .inline;
 				@include gridle(9);
@@ -28,9 +28,9 @@
 		}
 	}	
 	.us{
-		@include gridle(3);
-		@include gridle(12, mobile);
-		@include gridle(6, tablet);
+		@include gridle(12, xs);
+		@include gridle(6, sm);
+		@include gridle(3, md);
 		margin-top:20px;
 		h4{
 			font:{size:20px;family:$font_fjalla;}
@@ -45,7 +45,7 @@
 	}
 	.contact{
 		@extend .us;
-		@include gridle_hide(mobile);
+		@include gridle_hide(xs);
 		ul{
 			@extend .inline;
 			font:{size:10px;family:$font_hammer;}
@@ -73,6 +73,6 @@
 	}
 	.newsletter{
 		@extend .us;
-		@include gridle_hide(mobile);
+		@include gridle_hide(xs);
 	}
 }

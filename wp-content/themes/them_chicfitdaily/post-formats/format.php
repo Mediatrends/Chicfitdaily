@@ -14,6 +14,28 @@
               ?>
               
             <nav>
+                <div class="post_nav">
+
+                  <?php
+                    $prev_post = get_previous_post();
+                    if($prev_post) {
+                       $prev_title = strip_tags(str_replace('"', '', $prev_post->post_title));
+                       echo "\t" . '<a rel="prev" href="' . get_permalink($prev_post->ID) . '" title="' . $prev_title. '" class="nav_prev"></a>' . "\n";
+                                    }
+
+                    $next_post = get_next_post();
+                    if($next_post) {
+                       $next_title = strip_tags(str_replace('"', '', $next_post->post_title));
+                       echo "\t" . '<a rel="next" href="' . get_permalink($next_post->ID) . '" title="' . $next_title. '" class="nav_next"></a>' . "\n";
+                                    }
+                  ?>
+
+                  <div class="nextxt">
+                    <p>Ver mas post</p>
+                  </div>
+
+                </div>
+
                 <div class="cerrar" onclick="window.history.back();">
     
                 <div>x</div>

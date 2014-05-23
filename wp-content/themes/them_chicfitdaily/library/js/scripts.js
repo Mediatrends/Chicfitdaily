@@ -107,6 +107,12 @@ function loadGravatars() {
 */
 jQuery(document).ready(function($) {
 
+  $(window).load(function(){
+    $('main, footer').fadeIn();
+  });
+  $('a.nav_prev, a.nav_next, .more a, a.sidebar_a, .tags li a, .logo a, a.post-link, .nav li a').click(function(){
+    $('main, footer').fadeOut();
+  });
   /*
    * Let's fire off the gravatar function
    * You can remove this if you don't need it

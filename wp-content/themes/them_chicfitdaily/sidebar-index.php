@@ -25,7 +25,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1400804065659-2');
 					
 				<section id="post-<?php the_ID(); ?>" <?php post_class( 'post' ); ?> role="article">
 					
-					<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+					<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" class="sidebar_a">
 						
 						<div class="post_img" style="background-image:url('<?php the_field('img_post'); ?>');"></div>
 

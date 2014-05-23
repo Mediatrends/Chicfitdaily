@@ -1,19 +1,67 @@
 .cont_single{
 	@include gridle_parent();
-	@include gridle(12);
-	@include gridle(12, tablet);
-	@include gridle_centered();
+	@include gridle(12, xs sm);
+	@include gridle_centered(lg);
 	background:{color:#fff;}
+	margin-top:30px;
 	nav{
 		@include gridle(12);
-		@include gridle_parent(desktop);
+		@include gridle_parent(lg);
+		.post_nav{
+			@include gridle_state(xs){
+				margin:0 auto 45px;
+				width: 175px;
+			}
+			@include gridle_state(md){
+				float: left;
+			}
+			@include gridle_clear(both);
+			a{
+
+				@include gridle_float(left);
+				display: block;
+				width:40px;
+				height: 39px;
+				background:{
+					color:$pri_color;
+					image:url('#{$url_path}flechas_slide.gif');
+					size:100%;
+					position: center;
+					repeat:no-repeat;
+				}
+				&.nav_prev{
+					background: {
+						position:13px;
+					}
+				}
+				&.nav_next{
+					background: {
+						position:-13px;
+					}
+				}
+			}
+			.nextxt{
+				display: table;
+				height: 37px;
+				border: 1px solid $pri_color;
+				padding:0 5px;
+				@include gridle_float(left);
+				p{
+					display: table-cell;
+					vertical-align: middle;
+					font:{family:$font_hammer;size:13px;}
+					color: $pri_color;
+				}
+			}
+			
+		}
 		.cerrar{
 			background:{
 				color:$pri_color;
 			}
 			@include gridle_float(right);
-			@include gridle_hide(mobile);
-			display: tablet;
+			@include gridle_hide(xs);
+			display: table;
 			color:#fff;
 			width:40px;
 			height: 39px;
@@ -30,32 +78,36 @@
 		}
 		.share{
 			//@include gridle_float(right);
-			@include gridle_state(mobile) {
+			@include gridle_state(xs) {
 				margin:10px auto;
 				float: none !important;
+				clear: both !important;
 			}
 			.ssba{
 				div{
-					@include gridle_state(mobile) {
+					@include gridle_state(xs) {
 						text-align:center !important;
+						margin-top: 10px;
 					}
 					.ssba_sharecount{
-						@include gridle_state(mobile){
+						@include gridle_state(xs){
 							padding: 13px 6px 14px !important;
 							margin-right: 0;
 						}
+						@include gridle_state(md webkit_brw){
+							padding:13px 13px 14px;
+						}
 					}
 					.ssba_email_share{
-						@include gridle_hide(mobile);
+						@include gridle_hide(xs);
 					}
 				}
 			}
 		}
 	}
 	.cont_post_single{
-		@include gridle(8);
-		@include gridle(12, mobile);
-		@include gridle(12, tablet);
+		@include gridle(12, xs sm);
+		@include gridle(8, md);
 		@include responsive('width:1280px'){
 			@include gridle(8);
 		}
@@ -66,7 +118,7 @@
 				color:$pri_color;
 				font:{size:45px;family:$font_fjalla;}
 				text:{transform:uppercase};
-				@include gridle_state(mobile) {
+				@include gridle_state(xs) {
 					font:{size:25px;}
 					margin-bottom: 10px;
 				}
@@ -108,18 +160,12 @@
 			@include gridle(12);
 			margin: 20px 0;
 			.zone_728x90{
-				@include gridle_state(mobile){
+				@include gridle_state(xs){
 					@include gridle_hide();
 				}
-				@include gridle_state(tablet){
-					@include gridle_hide();
-				}
-				@include responsive('width:1280px'){
-					display:block !important;
-				}
+				@include gridle_centered(sm md);
 				width:728px;
 				height: 90px;
-				@include gridle_centered(desktop);
 			}
 		}
 	}

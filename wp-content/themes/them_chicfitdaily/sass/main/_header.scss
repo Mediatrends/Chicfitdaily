@@ -8,11 +8,11 @@
 			@extend .content;
 			ul{
 				@extend .inline;
-				@include gridle(9);
-				@include gridle(12,mobile);
+				@include gridle(12, xs);
+				@include gridle(9, sm);
 				font:{family:$font_hammer;size:14px;}
 				li{
-					@include gridle_state(mobile){
+					@include gridle_state(xs){
 						width: 100%;
 					}
 					a{
@@ -30,9 +30,7 @@
 			}
 			.search{
 				@include gridle(3);
-				@include gridle(4,tablet);
-				@include gridle_hide(mobile);
-				@include gridle_hide(tablet);
+				@include gridle_hide(xs);
 				form{
 					padding-top: 20px;
 					label{
@@ -76,13 +74,19 @@
 		@include gridle_parent();
 		margin-top:20px;
 		.logo{
-			@include gridle(4);
-			@include gridle(12, mobile);
+			@include gridle(12, xs sm);
+			@include gridle(4, md);
 			svg{
 				width:100%;
 				position: relative;
 				height: auto;
-				@media screen and (-webkit-min-device-pixel-ratio:0) {
+				@include gridle_state(xs){
+					height: 78px;
+				}
+				@include gridle_state(sm){
+					height: 188px;
+				}
+				@include gridle_state(md webkit_brw) {
 					height: 98px;
 				}
 			}
@@ -90,18 +94,12 @@
 		.ad_header{
 			@include gridle(8);
 			.zone_728x90{
-				@include gridle_state(mobile){
+				@include gridle_state(xs sm){
 					@include gridle_hide();
 				}
-				@include gridle_state(tablet){
-					@include gridle_hide();
-				}
-				@include responsive('width:1280px'){
-					display:block !important;
-				}
+				@include gridle_centered(md);
 				width:728px;
 				height: 90px;
-				@include gridle_centered(desktop);
 			}
 		}
 	}
