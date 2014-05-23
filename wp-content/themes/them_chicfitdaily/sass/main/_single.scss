@@ -6,7 +6,7 @@
 	background:{color:#fff;}
 	nav{
 		@include gridle(12);
-		@include gridle_parent();
+		@include gridle_parent(desktop);
 		.cerrar{
 			background:{
 				color:$pri_color;
@@ -29,7 +29,7 @@
 			}
 		}
 		.share{
-			@include gridle_float(right);
+			//@include gridle_float(right);
 			@include gridle_state(mobile) {
 				margin:10px auto;
 				float: none !important;
@@ -55,6 +55,10 @@
 	.cont_post_single{
 		@include gridle(8);
 		@include gridle(12, mobile);
+		@include gridle(12, tablet);
+		@include responsive('width:1280px'){
+			@include gridle(8);
+		}
 		@include gridle_clear(both);
 		margin-top:20px;
 		header{
@@ -104,15 +108,18 @@
 			@include gridle(12);
 			margin: 20px 0;
 			.zone_728x90{
-				display: none !important;
-				@include breakpoint(medium){
-					display: none !important;
+				@include gridle_state(mobile){
+					@include gridle_hide();
+				}
+				@include gridle_state(tablet){
+					@include gridle_hide();
+				}
+				@include responsive('width:1280px'){
+					display:block !important;
 				}
 				width:728px;
 				height: 90px;
-				@include gridle_centered();
-				background:{color:$ad_color;}
-				@include opacity(.3);
+				@include gridle_centered(desktop);
 			}
 		}
 	}

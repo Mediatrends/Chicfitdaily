@@ -1,15 +1,26 @@
 .sidebar{
 	@include gridle(4);
 	@include gridle(12, mobile);
+	@include gridle(12, tablet);
+	@include responsive('width:1280px'){
+		@include gridle(4);
+	}
 	margin-top: 20px;
 	padding-bottom: 10px;
 	.zone_300x250{
-		@include gridle_hide(tablet);
-		@include gridle_hide(mobile);
+		@include gridle_state(mobile){
+			@include gridle_hide();
+		}
+		@include gridle_state(tablet){
+			@include gridle_hide();
+		}
+		@include responsive('width:1280px'){
+			display:block !important;
+			margin: 0 auto;
+		}
 		width:300px;
 		height:250px;
-		margin:0 auto;
-		background:{color:$ad_color;}
+		@include gridle_centered(desktop);
 	}
 	.descatado{
 		@include gridle(12);

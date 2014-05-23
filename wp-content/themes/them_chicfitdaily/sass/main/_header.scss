@@ -89,13 +89,19 @@
 		}
 		.ad_header{
 			@include gridle(8);
-			@include gridle_hide(tablet);
-			@include gridle_hide(mobile);
 			.zone_728x90{
+				@include gridle_state(mobile){
+					@include gridle_hide();
+				}
+				@include gridle_state(tablet){
+					@include gridle_hide();
+				}
+				@include responsive('width:1280px'){
+					display:block !important;
+				}
 				width:728px;
 				height: 90px;
-				@include gridle_centered();
-				background:{color:$ad_color;}
+				@include gridle_centered(desktop);
 			}
 		}
 	}

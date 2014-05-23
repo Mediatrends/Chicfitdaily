@@ -30,6 +30,7 @@
 	.us{
 		@include gridle(3);
 		@include gridle(12, mobile);
+		@include gridle(6, tablet);
 		margin-top:20px;
 		h4{
 			font:{size:20px;family:$font_fjalla;}

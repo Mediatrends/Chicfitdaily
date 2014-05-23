@@ -1,6 +1,10 @@
 .cont_post{
 	@include gridle(8);
 	@include gridle(12, mobile);
+	@include gridle(12, tablet);
+	@include responsive('width:1280px'){
+		@include gridle(8);
+	}
 	margin-top: 20px;
 	.ad_content{
 		@include gridle(12);
@@ -8,11 +12,16 @@
 		.zone_728x90{
 			width:728px;
 			height: 90px;
-			@include gridle_centered();
-			background:{color:$ad_color;}
-			@include breakpoint(medium){display:none !important;}
-			@include breakpoint(large){display:none !important;}
-			@include breakpoint(xlarge){display:block !important;}
+			@include gridle_centered(desktop);
+			@include gridle_state(mobile){
+				@include gridle_hide();
+			}
+			@include gridle_state(tablet){
+				@include gridle_hide();
+			}
+			@include responsive('width:1280px'){
+				display:block !important;
+			}
 		}
 	}
 	#slide{
