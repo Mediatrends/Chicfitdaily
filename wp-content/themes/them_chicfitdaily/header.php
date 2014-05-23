@@ -7,7 +7,8 @@
 
 	<head>
 		<meta charset="utf-8">
-
+		
+		<meta name="google-site-verification" content="iEPo54RBFRELTuh7yNFJjmaZ-CF9BgzE7ZsnZjGvs-k" />
 		<?php // Google Chrome Frame for IE ?>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
@@ -47,6 +48,7 @@
 		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 		  ga('create', 'UA-51156134-1', 'chicfitdaily.com');
+		  ga('require', 'displayfeatures');
 		  ga('require', 'linkid', 'linkid.js');
 		  ga('send', 'pageview');
 
@@ -55,35 +57,30 @@
 
 		<?php //TAG DOUBLECLICK ?>
 
-		<script type='text/javascript'>
-		var googletag = googletag || {};
-		googletag.cmd = googletag.cmd || [];
-		(function() {
-		var gads = document.createElement('script');
-		gads.async = true;
-		gads.type = 'text/javascript';
-		var useSSL = 'https:' == document.location.protocol;
-		gads.src = (useSSL ? 'https:' : 'http:') + 
-		'//www.googletagservices.com/tag/js/gpt.js';
-		var node = document.getElementsByTagName('script')[0];
-		node.parentNode.insertBefore(gads, node);
-		})();
-		</script>
+<script type='text/javascript'>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
 
-		<script type='text/javascript'>
-		googletag.cmd.push(function() {
-		googletag.defineSlot('/20099485/Chic_INX_header', [728, 90], 'div-gpt-ad-1400624644223-1').addService(googletag.pubads());
-		googletag.defineSlot('/20099485/Chic_INX_sidebar', [300, 250], 'div-gpt-ad-1400624644223-2').addService(googletag.pubads());
-		googletag.enableServices();
-		});
-		</script>
-		<script type='text/javascript'>
-		googletag.cmd.push(function() {
-		googletag.defineSlot('/20099485/Chic_INX_content', [728, 90], 'div-gpt-ad-1400628702893-0').addService(googletag.pubads());
-		googletag.pubads().enableSingleRequest();
-		googletag.enableServices();
-		});
-		</script>
+<script type='text/javascript'>
+googletag.cmd.push(function() {
+googletag.defineSlot('/20099485/Chic_INX_content', [728, 90], 'div-gpt-ad-1400804065659-0').addService(googletag.pubads());
+googletag.defineSlot('/20099485/Chic_INX_header', [728, 90], 'div-gpt-ad-1400804065659-1').addService(googletag.pubads());
+googletag.defineSlot('/20099485/Chic_INX_sidebar', [300, 250], 'div-gpt-ad-1400804065659-2').addService(googletag.pubads());
+googletag.defineSlot('/20099485/Chic_SNG_content', [728, 90], 'div-gpt-ad-1400804065659-3').addService(googletag.pubads());
+googletag.enableServices();
+});
+</script>
 
 	</head>
 
@@ -132,12 +129,12 @@
 						<div class="ad_header">
 							<div class="zone_728x90">
 								
-								<!-- Chic_INX_header -->
-								<div id='div-gpt-ad-1400624644223-1' style='width:728px; height:90px;'>
-								<script type='text/javascript'>
-								googletag.cmd.push(function() { googletag.display('div-gpt-ad-1400624644223-1'); });
-								</script>
-								</div>
+<!-- Chic_INX_header -->
+<div id='div-gpt-ad-1400804065659-1' style='width:728px; height:90px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1400804065659-1'); });
+</script>
+</div>
 
 							</div>
 						</div>
