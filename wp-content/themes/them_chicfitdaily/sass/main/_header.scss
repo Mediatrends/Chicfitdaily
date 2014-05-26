@@ -34,13 +34,11 @@
 				form{
 					padding-top: 20px;
 					label{
-						//margin-right:20px;
-						span{
-							@extend .hide;
-						}
+						@include gridle_float(right);
 						input{
 							border:none;
 							@extend .text-right;
+							padding-right:10px;
 							@include placeholder(){
 								color:#000;
 								font:{
@@ -53,10 +51,12 @@
 						}		
 					}
 					.search-submit{
+						@include gridle_float(right);
 						width: 20px;
 						height: 21px;
 						border:none;
-						background:{image:url(#{$url_path}icon_search.gif);}
+						background:{image:url('#{$url_path}icon_search.gif');}
+						text:{indent:-1000px;}
 					}
 				}
 			}
@@ -95,7 +95,7 @@
 			@include gridle(8);
 			.zone_728x90{
 				@include gridle_state(xs sm){
-					@include gridle_hide();
+					display: $hide;
 				}
 				@include gridle_centered(md);
 				width:728px;

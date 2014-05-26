@@ -108,9 +108,6 @@
 	.cont_post_single{
 		@include gridle(12, xs sm);
 		@include gridle(8, md);
-		@include responsive('width:1280px'){
-			@include gridle(8);
-		}
 		@include gridle_clear(both);
 		margin-top:20px;
 		header{
@@ -161,7 +158,7 @@
 			margin: 20px 0;
 			.zone_728x90{
 				@include gridle_state(xs){
-					@include gridle_hide();
+					display: $hide;
 				}
 				@include gridle_centered(sm md);
 				width:728px;

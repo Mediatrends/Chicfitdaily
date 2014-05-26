@@ -9,7 +9,7 @@
 			width:728px;
 			height: 90px;
 			@include gridle_state(xs){
-				@include gridle_hide();
+				display: $hide;
 			}
 			@include gridle_centered(sm md);
 		}
@@ -107,7 +107,7 @@
 			@include gridle_float(right);
 			position: relative;
 			z-index: 9;
-			background:{image:url(#{$url_path}flechas_slide.gif);repeat:no-repeat;position: 27px center;}
+			background:{image:url('#{$url_path}flechas_slide.gif');repeat:no-repeat;position: 27px center;}
 		}
 		.next{
 			@extend .prev;
@@ -178,7 +178,7 @@
 			.more{
 				@include border-radius(50%);
 				@include gridle_float(right);
-				background:{color:$pri-color;image:url(#{$url_path}icon_more.gif);repeat:no-repeat;position:center;}
+				background:{color:$pri-color;image:url('#{$url_path}icon_more.gif');repeat:no-repeat;position:center;}
 				margin-top:10px;
 				width:22px;
 				height: 22px;
