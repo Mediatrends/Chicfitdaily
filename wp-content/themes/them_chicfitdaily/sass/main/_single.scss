@@ -94,12 +94,15 @@
 							padding: 13px 6px 14px !important;
 							margin-right: 0;
 						}
-						@include gridle_state(md webkit_brw){
+						@include gridle_state(sm md){
+							padding: 13px 13px;
+						}
+						@include gridle_state(webkit_brw){
 							padding:13px 13px 14px;
 						}
 					}
 					.ssba_email_share{
-						@include gridle_hide(xs);
+						@include gridle_hide(xs sm);
 					}
 				}
 			}
