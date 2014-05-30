@@ -203,7 +203,7 @@ and be up and running in seconds.
   wp_enqueue_style( 'googleFonts');
 }*/
 
-add_action('wp_print_styles', 'bones_fonts');
+//add_action('wp_print_styles', 'bones_fonts');
 
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>

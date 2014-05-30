@@ -4,7 +4,7 @@
 		
 		<footer id="footer" class="footer" role="contentinfo">
 
-				<nav role="navigation">
+				<!--nav role="navigation">
 
 					<div class="cont_menu">
 
@@ -22,7 +22,7 @@
 						'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
 						)); ?>
 					</div>
-				</nav>
+				</nav-->
 				
 				<div class="us">
 					
@@ -49,28 +49,28 @@
 					<ul>
 						<li>
 							<a href="" target="_blank">
-								<svg viewBox="3 4 60 60">
+								<svg viewBox="23.5 23.5 20 20">
 									<use xlink:href="#svg_facebook"/>
 								</svg>
 							</a>
 						</li>
 						<li>
 							<a href="" target="_blank">
-								<svg viewBox="3 4 60 60">
+								<svg viewBox="23.5 23.5 20 20">
 									<use xlink:href="#svg_twitter"/>
 								</svg>
 							</a>
 						</li>
 						<li>
 							<a href="" target="_blank">
-								<svg viewBox="0 0 128 128">
+								<svg viewBox="23.5 23.5 20 20">
 									<use xlink:href="#svg_pinterest"/>
 								</svg>
 							</a>
 						</li>
 						<li>
 							<a href="" target="_blank">
-								<svg viewBox="3 4 60 60">
+								<svg viewBox="23.5 23.5 20 20">
 									<use xlink:href="#svg_instagram"/>
 								</svg>
 							</a>
@@ -84,7 +84,7 @@
 
 				</div>
 
-				<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
+				<!--p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p-->
 
 		</footer>
 

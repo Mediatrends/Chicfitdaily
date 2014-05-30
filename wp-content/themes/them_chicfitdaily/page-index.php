@@ -16,7 +16,6 @@
 <?php get_header(); ?>
 
 <section class="cont_post">
-
 	<section id="slide">
 		<ul>
 			<?php 
@@ -30,7 +29,7 @@
 				        <li id="post-<?php the_ID(); ?>" <?php post_class( '' ); ?> style="background-image:url('<?php the_field('img_post'); ?>');">
 								
 							<a class="post-link" href="<?php the_permalink() ?>" rel="single" rel="bookmark" title="<?php the_title_attribute(); ?>">
-								<div class="category">
+								<!--div class="category">
 									
 									<?php
 										$posttags = get_the_tags();
@@ -45,17 +44,32 @@
 										}
 									?>
 
-								</div>
+								</div-->
 								
-								<div class="fecha">
+								<!--div class="fecha">
 									
 									<?php echo get_the_date('j'); ?>
 									<br>
 									<span><?php echo get_the_date('M'); ?></span>
 
-								</div>
+								</div-->
 
-								<div class="tit"><span><?php echo substr(the_title($before = '', $after = '', FALSE), 0, 40); ?></span></div>
+								<!--div class="tit">
+									<?php echo substr(the_title($before = '', $after = '', FALSE), 0, 40); ?><br>
+									<?php echo get_the_date();?><br>
+									<?php
+										$posttags = get_the_tags();
+										$count=0;
+										if ($posttags) {
+										  foreach($posttags as $tag) {
+										    $count++;
+										    if (1 == $count) {
+										      echo $tag->name . ' ';
+										    }
+										  }
+										}
+									?>
+								</div-->
 
 							</a>
 								
@@ -105,18 +119,18 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1400804065659-0');
 							
 							<div class="post_img" style="background-image:url('<?php the_field('img_post'); ?>');">
 								
-								<div class="fecha">
+								<!--div class="fecha">
 									
 									<?php echo get_the_date('j'); ?>
 									<br>
 									<span><?php echo get_the_date('M'); ?></span>
 
-								</div>
+								</div-->
 
 							</div>
 
 							<h3><?php echo substr(the_title($before = '', $after = '', FALSE), 0, 42); ?></h3>
-
+							<h4><?php echo get_the_date(''); ?></h4>
 							<p><?php echo substr(get_the_excerpt(), 0,184); ?></p>
 						</a>
 						<?php the_tags( '<ul class="tags"><li>',' ','</li></ul>' ); ?>

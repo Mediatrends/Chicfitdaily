@@ -90,6 +90,7 @@
 						margin-top: 10px;
 					}
 					.ssba_sharecount{
+						background:{color:$pri_color;}
 						@include gridle_state(xs){
 							padding: 13px 6px 14px !important;
 							margin-right: 0;
@@ -103,6 +104,29 @@
 					}
 					.ssba_email_share{
 						@include gridle_hide(xs sm);
+					}
+				}
+			}
+			.addthis_toolbox{
+				span{
+					@extend .cerrar;
+					height: 40px;
+					text-indent: -1000px;
+					background:{color:$pri_color;}
+					&.at15t_google_plusone_share{
+						background: {image:url('#{$url_path}icon_sgoplus.gif');position: center;size:80%;}
+					}
+					&.at15t_email{
+						background: {image:url('#{$url_path}icon_smail.gif');position: center;size:80%;}
+					}
+					&.at15t_facebook{
+						background: {image:url('#{$url_path}icon_sfb.gif');position: center;size:80%;}
+					}
+					&.at15t_twitter{
+						background: {image:url('#{$url_path}icon_stw.gif');position: center;size:80%;}
+					}
+					span{
+						@extend .hide;
 					}
 				}
 			}
@@ -150,6 +174,9 @@
 				padding:5px 5px;
 				background:{color:$pri-color;}
 			}
+		}
+		.addthis_toolbox{
+			@extend .hide;
 		}
 		p{
 			@include gridle_clear(both);

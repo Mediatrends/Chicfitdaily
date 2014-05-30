@@ -18,6 +18,8 @@
 		@include gridle(12);
 		@include gridle_parent();
 		height:442px;
+		overflow: hidden;
+		position: relative;
 		ul{
 			position: relative;
 			list-style: none;
@@ -76,23 +78,15 @@
 					}
 					//hightligt
 					.tit{
-						max-width: 300px;
+						width: 100%;
 						margin-bottom: 1rem;
 						position: absolute;
-						bottom: 20px;
-						padding-left:8px;
-						span{
-							display: inline;
-							background:{color:$pri_color;}
-							font:{size:29px;family:$font_fjalla;}
-							text:{transform:uppercase;}
-							color: #fff; 
-							padding: $padding;
-							padding-right: 0;
-							padding-left: 0;
-							box-shadow: $padding 0 0 $pri_color, -$padding 0 0 $pri_color;
-							line-height: 40px;
-						}
+						bottom: -18px;
+						@extend .text-center;
+						font:{size:29px;family:$font_fjalla;}
+						line-height: 40px;
+						color: #fff;
+						background:{color:rgba(200,153,153,.7);}
 					}
 				}
 			}
@@ -101,17 +95,17 @@
 			display: block;
 			width:73px;
 			height: 73px;
-			background:{color:$pri_color;}
-			margin-right: 75px;
-			margin-top:-100px;
-			@include gridle_float(right);
+			margin-left: -73px;
+			margin-top:-250px;
+			@include gridle_float(left);
 			position: relative;
 			z-index: 9;
-			background:{image:url('#{$url_path}flechas_slide.gif');repeat:no-repeat;position: 27px center;}
+			background:{image:url('#{$url_path}flechas_slide2.png');repeat:no-repeat;position: 27px center;}
 		}
 		.next{
 			@extend .prev;
-			margin-right: 0;
+			@include gridle_float(right);
+			margin-right: -73px;
 			background:{position: -20px center;}
 		}
 	}
@@ -126,7 +120,7 @@
 		}
 		.post{
 			@include gridle(12, xs sm);
-			@include gridle(6, md);
+			@include gridle(12, md);
 			margin-bottom: 20px;
 			max-height:332px;
 			a{
@@ -157,6 +151,12 @@
 					color:$pri_color;
 					padding:10px 0;
 				}
+				h4{
+					font:{family:$font_hammer;size:12px;}
+					color:#ccc;
+					margin:5px 0;
+					text:{transform:uppercase;}
+				}
 				p{
 					font:{family:$font_hammer;size:12px;}
 					color:#000;
@@ -168,7 +168,7 @@
 				li{
 					a{
 						text:{transform:uppercase;}
-						font:{size:11px;family:$font_fjalla;style:italic;}
+						font:{size:11px;family:$font_fjalla;}
 						color: #fff;
 						padding:2px 5px;
 						background:{color:$pri-color;}
@@ -178,7 +178,7 @@
 			.more{
 				@include border-radius(50%);
 				@include gridle_float(right);
-				background:{color:$pri-color;image:url('#{$url_path}icon_more.gif');repeat:no-repeat;position:center;}
+				background:{color:#99FFE5;image:url('#{$url_path}icon_more.gif');repeat:no-repeat;position:center;}
 				margin-top:10px;
 				width:22px;
 				height: 22px;

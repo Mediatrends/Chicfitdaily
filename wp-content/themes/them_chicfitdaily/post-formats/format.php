@@ -43,7 +43,9 @@
               </div>
               <div class="share">
                 
-                <?php echo do_shortcode('[ssba]'); ?>
+                <?php //echo do_shortcode('[ssba]'); ?>
+
+                <?php //do_action( 'addthis_widget', get_permalink(), get_the_title(), 'above'); ?>
 
               </div>
             </nav>

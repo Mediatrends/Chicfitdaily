@@ -1,9 +1,7 @@
 .footer{
 	@include gridle_parent();
 	@include gridle_clear();
-	background:{
-		color:#000;
-	}
+	background:{color:$gris_color;}
 	nav{
 		@include gridle_parent();
 		border-bottom:1px solid $pri_color;
@@ -39,11 +37,13 @@
 			margin-bottom:10px;
 		}
 		p{
-			font:{size:11px;family:$font_hammer;}
-			color:#fff;
+			font:{size:12px;family:$font_hammer;}
+			color:#999;
+			text:{transform:uppercase;}
 		}
 	}
 	.contact{
+		@extend .hide;
 		@extend .us;
 		@include gridle_hide(xs);
 		ul{
@@ -65,9 +65,14 @@
 		ul{
 			@extend .inline;
 			li{
-				width: 15%;
+				width: 14%;
 				height: auto;
-				svg{max-height: 15%;}
+				a{
+					width:100%;
+					height: 100%;
+					display: block;
+					svg{max-height: 15%;width:100%;}
+				}
 			}
 		}
 	}

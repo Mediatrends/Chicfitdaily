@@ -1,8 +1,10 @@
 .header{
 	@include gridle_parent();
 	nav{
-		@include gridle_parent();
-		border-bottom:1px solid $pri_color;
+		@extend .content;
+		border-top:1px solid $gris_color;
+		border-bottom:1px solid $gris_color;
+		margin-top: 10px;
 		background:{color:#fff;}
 		.cont_menu{
 			@extend .content;
@@ -20,10 +22,10 @@
 					color:#000;
 					height: 37px;
 					padding:25px 25px 0;
-					text:{decoration:none;}
+					text:{decoration:none;transform:uppercase;}
 					&:hover{
-						background:{color:$pri_color;}
-						color:#fff;
+						//background:{color:$pri_color;}
+						color:$sec_color;
 					}
 				}
 				}

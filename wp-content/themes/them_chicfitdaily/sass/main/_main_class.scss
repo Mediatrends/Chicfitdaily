@@ -87,6 +87,19 @@
         @content;
     }
 }
+//COLOR SHARE FOOTER
+#svg_facebook{
+	path{fill:$sec_color;}
+}
+#svg_twitter{
+	@extend #svg_facebook;
+}
+#svg_instagram{
+	@extend #svg_facebook;
+}
+#svg_pinterest{
+	@extend #svg_facebook;
+}
 //LOAD
 main{
 	@extend .hide;
