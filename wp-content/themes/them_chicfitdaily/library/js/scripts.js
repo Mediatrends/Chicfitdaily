@@ -108,10 +108,14 @@ function loadGravatars() {
 jQuery(document).ready(function($) {
 
   $(window).load(function(){
-    $('main, footer').fadeIn();
+    $('.spinner').fadeOut(500,function(){
+       $('main, footer').fadeIn();
+    });
   });
   $('a.nav_prev, a.nav_next, .more a, a.sidebar_a, .tags li a, .logo a, a.post-link, .nav li a').click(function(){
-    $('main, footer').fadeOut();
+    $('main, footer').fadeOut(function(){
+      $('.spinner').fadeIn();
+    });
   });
   /*
    * Let's fire off the gravatar function
