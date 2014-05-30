@@ -4,6 +4,8 @@
 		
 		<footer id="footer" class="footer" role="contentinfo">
 
+			<div class="content">
+				
 				<!--nav role="navigation">
 
 					<div class="cont_menu">
@@ -85,6 +87,8 @@
 				</div>
 
 				<!--p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p-->
+
+			</div>
 
 		</footer>
 

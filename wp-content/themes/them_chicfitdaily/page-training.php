@@ -1,6 +1,6 @@
 <?php
 /*
- Template Name: Index-page
+ Template Name: TRAINING
  *
  * This is your custom page template. You can create as many of these as you need.
  * Simply name is "page-whatever.php" and in add the "Template Name" title at the
@@ -107,7 +107,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1400804065659-0');
 		<h2>LO MAS RECIENTE</h2>
 		<?php
 			// the query
-			$the_query = new WP_Query('category_name=tonificacion,cardio,compras-inteligentes-2,habitos,jugos,accesorios,brazos,running,comer-bien,dietas,comidas,vestuario,piernas,quemadores,tips-comidas,snack,musica,hombros,poteinas,alimentos-buenos,tendencias'); ?>
+			$the_query = new WP_Query('category_name=tonificacion,brazos,piernas,hombros'); ?>
 			
 			<?php if ( $the_query->have_posts() ) : ?>
 
