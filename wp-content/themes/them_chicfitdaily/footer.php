@@ -1,5 +1,13 @@
 			</article>
 			<div id="push"></div>
+			
+			<div class="ad_lateral">
+				
+				<div class="zone_160x600 ad01"></div>
+				<div class="zone_160x600 ad02"></div>
+
+			</div>
+
 		</main>
 		
 		<footer id="footer" class="footer" role="contentinfo">

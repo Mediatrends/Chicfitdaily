@@ -4,133 +4,8 @@
 	@include gridle_centered(lg);
 	background:{color:#fff;}
 	margin-top:30px;
-	nav{
-		@include gridle(12);
-		@include gridle_parent(lg);
-		.post_nav{
-			@include gridle_state(xs){
-				margin:0 auto 45px;
-				width: 175px;
-			}
-			@include gridle_state(md){
-				float: left;
-			}
-			@include gridle_clear(both);
-			a{
-
-				@include gridle_float(left);
-				display: block;
-				width:40px;
-				height: 39px;
-				background:{
-					color:$pri_color;
-					image:url('#{$url_path}flechas_slide.gif');
-					size:100%;
-					position: center;
-					repeat:no-repeat;
-				}
-				&.nav_prev{
-					background: {
-						position:13px;
-					}
-				}
-				&.nav_next{
-					background: {
-						position:-13px;
-					}
-				}
-			}
-			.nextxt{
-				display: table;
-				height: 37px;
-				border: 1px solid $pri_color;
-				padding:0 5px;
-				@include gridle_float(left);
-				p{
-					display: table-cell;
-					vertical-align: middle;
-					font:{family:$font_hammer;size:13px;}
-					color: $pri_color;
-				}
-			}
-			
-		}
-		.cerrar{
-			background:{
-				color:$pri_color;
-			}
-			@include gridle_float(right);
-			@include gridle_hide(xs);
-			display: table;
-			color:#fff;
-			width:40px;
-			height: 39px;
-			text:{align:center;}
-			margin-left: 9px;
-			cursor: pointer;
-			div{
-				width:40px;
-				height: 40px;
-				display: table-cell;
-				vertical-align: middle;
-				font:{family:$font_hammer;}
-			}
-		}
-		.share{
-			//@include gridle_float(right);
-			@include gridle_state(xs) {
-				margin:10px auto;
-				float: none !important;
-				clear: both !important;
-			}
-			.ssba{
-				div{
-					@include gridle_state(xs) {
-						text-align:center !important;
-						margin-top: 10px;
-					}
-					.ssba_sharecount{
-						background:{color:$pri_color;}
-						@include gridle_state(xs){
-							padding: 13px 6px 14px !important;
-							margin-right: 0;
-						}
-						@include gridle_state(sm md){
-							padding: 13px 13px;
-						}
-						@include gridle_state(webkit_brw){
-							padding:13px 13px 14px;
-						}
-					}
-					.ssba_email_share{
-						@include gridle_hide(xs sm);
-					}
-				}
-			}
-			.addthis_toolbox{
-				span{
-					@extend .cerrar;
-					height: 40px;
-					text-indent: -1000px;
-					background:{color:$pri_color;}
-					&.at15t_google_plusone_share{
-						background: {image:url('#{$url_path}icon_sgoplus.gif');position: center;size:80%;}
-					}
-					&.at15t_email{
-						background: {image:url('#{$url_path}icon_smail.gif');position: center;size:80%;}
-					}
-					&.at15t_facebook{
-						background: {image:url('#{$url_path}icon_sfb.gif');position: center;size:80%;}
-					}
-					&.at15t_twitter{
-						background: {image:url('#{$url_path}icon_stw.gif');position: center;size:80%;}
-					}
-					span{
-						@extend .hide;
-					}
-				}
-			}
-		}
+	@include gridle_state(xs sm){
+		margin-top:0;
 	}
 	.cont_post_single{
 		@include gridle(12, xs sm);
@@ -145,6 +20,120 @@
 				@include gridle_state(xs) {
 					font:{size:25px;}
 					margin-bottom: 10px;
+				}
+			}
+		}
+		.fecha{
+			font:{family:$font_hammer;size:12px;}
+			color:#ccc;
+			margin:5px 0;
+			text:{transform:uppercase;}
+		}
+		nav{
+			@include gridle(12);
+			@include gridle_parent(sm lg);
+			@include gridle_clear();
+			margin: 10px 0;
+			.post_nav{
+				@include gridle_state(xs){
+					margin:0 auto 45px;
+					width: 175px;
+				}
+				@include gridle_state(md){
+					float: left;
+				}
+				@include gridle_clear(both);
+				a{
+					@include gridle_float(left);
+					display: block;
+					width:40px;
+					height: 39px;
+					background:{
+						color:$pri_color;
+						image:url('#{$url_path}flechas_slide.gif');
+						size:100%;
+						position: center;
+						repeat:no-repeat;
+					}
+					&.nav_prev{
+						background: {
+							position:13px;
+						}
+					}
+					&.nav_next{
+						background: {
+							position:-13px;
+						}
+					}
+				}
+				.nextxt{
+					display: table;
+					height: 37px;
+					border: 1px solid $pri_color;
+					padding:0 2px;
+					@include gridle_float(left);
+					p{
+						display: table-cell;
+						vertical-align: middle;
+						font:{family:$font_hammer;size:13px;}
+						color: $pri_color;
+						padding:0 2px;
+					}
+				}
+				
+			}
+			.cerrar{
+				background:{
+					color:$pri_color;
+				}
+				@include gridle_float(right);
+				@include gridle_hide(xs);
+				display: table;
+				color:#fff;
+				width:40px;
+				height: 39px;
+				text:{align:center;}
+				margin-left: 9px;
+				cursor: pointer;
+				div{
+					width:40px;
+					height: 40px;
+					display: table-cell;
+					vertical-align: middle;
+					font:{family:$font_hammer;}
+				}
+			}
+			.share{
+				//@include gridle_float(right);
+				@include gridle_state(xs) {
+					margin:10px auto;
+					float: none !important;
+					clear: both !important;
+				}
+				.addthis_toolbox{
+					span{
+						@extend .cerrar;
+						height: 40px;
+						text-indent: -1000px;
+						background:{color:$pri_color;}
+						overflow: hidden;
+						position: relative;
+						&.at15t_google_plusone_share{
+							background: {image:url('#{$url_path}icon_sgoplus.gif');position: center;size:80%;}
+						}
+						&.at15t_email{
+							background: {image:url('#{$url_path}icon_smail.gif');position: center;size:80%;}
+						}
+						&.at15t_facebook{
+							background: {image:url('#{$url_path}icon_sfb.gif');position: center;size:80%;}
+						}
+						&.at15t_twitter{
+							background: {image:url('#{$url_path}icon_stw.gif');position: center;size:80%;}
+						}
+						span{
+							@extend .hide;
+						}
+					}
 				}
 			}
 		}
@@ -165,14 +154,6 @@
 						background:{color:$pri-color;}
 					}
 				}
-			}
-			.fecha{
-				@include gridle_float(left);
-				margin-left:10px;
-				font:{size:18px;family:$font_fjalla;style:italic;}
-				color: #fff;
-				padding:5px 5px;
-				background:{color:$pri-color;}
 			}
 		}
 		.addthis_toolbox{
@@ -196,8 +177,8 @@
 			}
 		}
 	}
-	.clear{
+	.salto{
+		@include gridle_clear();
 		height: 100px;
-		@include gridle_clear(both);
 	}
 }

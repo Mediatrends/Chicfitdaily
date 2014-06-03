@@ -54,6 +54,8 @@
 	@include gridle_container();
 	@include gridle_centered();
 	max-width:1170px;
+	position: relative;
+	z-index: 9;
 }
 //Sticky Footer
 .footer{

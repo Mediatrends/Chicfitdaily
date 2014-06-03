@@ -40,7 +40,7 @@
 
 <?php get_sidebar('index'); ?>
                 
-<div class="clear"></div>
+<div class="salto"></div>
 </section>
 
 <?php get_footer(); ?>

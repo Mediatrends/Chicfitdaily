@@ -13,42 +13,6 @@
                 */
               ?>
               
-            <nav>
-                <div class="post_nav">
-
-                  <?php
-                    $prev_post = get_previous_post();
-                    if($prev_post) {
-                       $prev_title = strip_tags(str_replace('"', '', $prev_post->post_title));
-                       echo "\t" . '<a rel="prev" href="' . get_permalink($prev_post->ID) . '" title="' . $prev_title. '" class="nav_prev"></a>' . "\n";
-                                    }
-
-                    $next_post = get_next_post();
-                    if($next_post) {
-                       $next_title = strip_tags(str_replace('"', '', $next_post->post_title));
-                       echo "\t" . '<a rel="next" href="' . get_permalink($next_post->ID) . '" title="' . $next_title. '" class="nav_next"></a>' . "\n";
-                                    }
-                  ?>
-
-                  <div class="nextxt">
-                    <p>Ver mas post</p>
-                  </div>
-
-                </div>
-
-                <div class="cerrar" onclick="window.history.back();">
-    
-                <div>x</div>
-
-              </div>
-              <div class="share">
-                
-                <?php //echo do_shortcode('[ssba]'); ?>
-
-                <?php //do_action( 'addthis_widget', get_permalink(), get_the_title(), 'above'); ?>
-
-              </div>
-            </nav>
 
 
               <section id="post-<?php the_ID(); ?>" <?php post_class('cont_post_single'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
@@ -59,8 +23,45 @@
                   <h2 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h2>
 
                 </header> <?php // end article header ?>
+                
+                <div class="fecha"><?php echo get_the_date('j / m / Y'); ?></div>
 
-                <section class="entry-content" itemprop="articleBody">
+                <nav>
+                  <div class="post_nav">
+
+                      <?php
+                        $prev_post = get_previous_post();
+                        if($prev_post) {
+                           $prev_title = strip_tags(str_replace('"', '', $prev_post->post_title));
+                           echo "\t" . '<a rel="prev" href="' . get_permalink($prev_post->ID) . '" title="' . $prev_title. '" class="nav_prev"></a>' . "\n";
+                                        }
+
+                        $next_post = get_next_post();
+                        if($next_post) {
+                           $next_title = strip_tags(str_replace('"', '', $next_post->post_title));
+                           echo "\t" . '<a rel="next" href="' . get_permalink($next_post->ID) . '" title="' . $next_title. '" class="nav_next"></a>' . "\n";
+                                        }
+                      ?>
+
+                      <div class="nextxt">
+                        <p>Ver mas post</p>
+                      </div>
+
+                  </div>
+
+                  <div class="cerrar" onclick="window.history.back();">
+        
+                  <div>x</div>
+
+                  </div>
+                  <div class="share">
+                    
+                    <?php //do_action( 'addthis_widget', get_permalink(), get_the_title(), 'above'); ?>
+
+                  </div>
+                </nav>
+
+                <section class="clear entry-content" itemprop="articleBody">
                   
 
                   <img src="<?php the_field('img_post'); ?>" alt="" class="responsive-img">
@@ -72,8 +73,6 @@
 
                     <?php //printf( __( '<time class="updated" datetime="%1$s" pubdate>%2$s</time> <!--by <span class="author">%3$s</span-->', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), get_the_author_link( get_the_author_meta( 'ID' ) )); ?>
                     
-                    <div class="fecha"><?php echo get_the_date('j / m / Y'); ?></div>
-
                   </div>
 
                 
@@ -116,13 +115,13 @@
                 
                 <div class="ad_content">
                   <div class="zone_728x90">
-<!-- Chic_SNG_content -->
-<div id='div-gpt-ad-1400804065659-3' style='width:728px; height:90px;'>
-<script type='text/javascript'>
-googletag.cmd.push(function() { googletag.display('div-gpt-ad-1400804065659-3'); });
-</script>
-</div>
-</div>
+                    <!-- Chic_SNG_content -->
+                    <div id='div-gpt-ad-1400804065659-3' style='width:728px; height:90px;'>
+                      <script type='text/javascript'>
+                      googletag.cmd.push(function() { googletag.display('div-gpt-ad-1400804065659-3'); });
+                      </script>
+                    </div>
+                  </div>
                 </div>
 
               </section> <?php // end article ?>

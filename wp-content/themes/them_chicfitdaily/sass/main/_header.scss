@@ -1,5 +1,7 @@
 .header{
 	@include gridle_parent();
+	position: relative;
+	z-index: 9;
 	nav{
 		@extend .content;
 		border-top:1px solid $gris_color;
