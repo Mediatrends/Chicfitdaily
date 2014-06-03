@@ -56,7 +56,7 @@
                   </div>
                   <div class="share">
                     
-                    <?php //do_action( 'addthis_widget', get_permalink(), get_the_title(), 'above'); ?>
+                    <?php do_action( 'addthis_widget', get_permalink(), get_the_title(), 'above'); ?>
 
                   </div>
                 </nav>

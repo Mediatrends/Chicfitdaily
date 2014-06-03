@@ -111,6 +111,7 @@
 					clear: both !important;
 				}
 				.addthis_toolbox{
+					display: block;
 					span{
 						@extend .cerrar;
 						height: 40px;
