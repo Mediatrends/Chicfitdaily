@@ -58,14 +58,14 @@
 
 					<ul>
 						<li>
-							<a href="" target="_blank">
+							<a href="http://www.facebook.com/chicfitdaily" target="_blank">
 								<svg viewBox="23.5 23.5 20 20">
 									<use xlink:href="#svg_facebook"/>
 								</svg>
 							</a>
 						</li>
 						<li>
-							<a href="" target="_blank">
+							<a href="http://www.twitter.com/chicfitdaily" target="_blank">
 								<svg viewBox="23.5 23.5 20 20">
 									<use xlink:href="#svg_twitter"/>
 								</svg>
@@ -79,7 +79,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="" target="_blank">
+							<a href="http://instagram.com/chicfitdaily" target="_blank">
 								<svg viewBox="23.5 23.5 20 20">
 									<use xlink:href="#svg_instagram"/>
 								</svg>

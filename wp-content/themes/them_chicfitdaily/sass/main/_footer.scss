@@ -30,10 +30,13 @@
 	background:{color:$gris_color;}
 	position: relative;
 	z-index: 1;
+	@include gridle_state(xs){
+		height: 490px !important;
+		padding-bottom:20px;
+	}
 	nav{
 		@include gridle_parent();
 		.cont_menu{
-			@include gridle_hide(xs);
 			ul{
 				@extend .inline;
 				@include gridle(9);
@@ -70,7 +73,6 @@
 	}
 	.contact{
 		@extend .us;
-		@include gridle_hide(xs);
 		nav{
 			@include gridle_parent();
 			.about{
@@ -93,6 +95,9 @@
 	}
 	.share{
 		@extend .us;
+		@include gridle_state(sm){
+			clear: left;
+		}
 		ul{
 			@extend .inline;
 			li{
@@ -109,7 +114,6 @@
 	}
 	.newsletter{
 		@extend .us;
-		@include gridle_hide(xs);
 		.php_wysija{
 			.updated{
 				background:{color:$pri_color;}
@@ -130,7 +134,7 @@
 						height: 40px;
 						border:none;
 						background:{color:#fff}
-						color: $gris_color;
+						color: #999;
 					}
 				}
 				input{

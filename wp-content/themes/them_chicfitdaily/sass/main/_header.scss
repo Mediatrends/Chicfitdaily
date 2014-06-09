@@ -1,4 +1,7 @@
 .scrollToTop{
+	@include gridle_state(xs sm){
+		display: none !important;
+	}
 	width:40px; 
 	height:40px;
 	padding:10px; 
