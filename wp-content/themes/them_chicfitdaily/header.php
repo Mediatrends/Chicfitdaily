@@ -87,6 +87,11 @@
 	<body <?php body_class(); ?>>
 	<?php include (TEMPLATEPATH . '/svg_cont.php'); ?>
 
+	<a href="#" class="scrollToTop">
+		<img src="<?php echo get_template_directory_uri(); ?>/img/top_fle.png" alt="">
+		Subir
+	</a>
+
 		<div class="spinner">
 		  <div class="double-bounce1"></div>
 		  <div class="double-bounce2"></div>

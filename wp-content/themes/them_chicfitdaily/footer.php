@@ -14,47 +14,47 @@
 
 			<div class="content">
 				
-				<!--nav role="navigation">
-
-					<div class="cont_menu">
-
-						<?php wp_nav_menu(array(
-						'container' => '',                              // remove nav container
-						'container_class' => 'footer-links cf',         // class of container (should you choose to use it)
-						'menu' => __( 'Footer Links', 'bonestheme' ),   // nav name
-						'menu_class' => 'nav footer-nav cf',            // adding custom nav class
-						'theme_location' => 'footer-links',             // where it's located in the theme
-						'before' => '',                                 // before the menu
-		    			'after' => '',                                  // after the menu
-		    			'link_before' => '',                            // before each link
-		    			'link_after' => '',                             // after each link
-		    			'depth' => 0,                                   // limit the depth of the nav
-						'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
-						)); ?>
-					</div>
-				</nav-->
-				
 				<div class="us">
 					
-					<h4>nosotros</h4>
-					<p><?php echo bloginfo('description'); ?></p>
+					<h4>CHIC FIT DAILY</h4>
+					<!--p><?php echo bloginfo('description'); ?></p-->
+					<nav role="navigation">
+
+						<div class="cont_menu">
+
+							<?php wp_nav_menu(array(
+							'container' => '',                              // remove nav container
+							'container_class' => 'footer-links cf',         // class of container (should you choose to use it)
+							'menu' => __( 'Footer Links', 'bonestheme' ),   // nav name
+							'menu_class' => 'nav footer-nav cf',            // adding custom nav class
+							'theme_location' => 'footer-links',             // where it's located in the theme
+							'before' => '',                                 // before the menu
+			    			'after' => '',                                  // after the menu
+			    			'link_before' => '',                            // before each link
+			    			'link_after' => '',                             // after each link
+			    			'depth' => 0,                                   // limit the depth of the nav
+							'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
+							)); ?>
+						</div>
+					</nav>
 				</div>
 
 				<div class="contact">
 					
-					<h4>contacto</h4>
-
-					<ul class="redes">
-						<li><span>Ubicacion:</span><br>V. Mackenna #9910 , Santiago.</li>
-						<li><span>e-Mail:</span><br>info@chicfitdaily.com</li>
-						<li><span>Twitter:</span><br>@chicfitdaily_scl</li>
-						<li><span>Facebook:</span><br>/chicfitdaily_scl</li>
-					</ul>
+					<h4>ABOUT US</h4>
+					<nav>
+						<ul class="about">
+							<li><a href="<?php echo get_page_link(84); ?>">acerca de</a></li>
+							<li><a href="">escribe aquí</a></li>
+							<li><a href="">contáctanos</a></li>
+						</ul>
+					</nav>
+					
 				</div>
 				
 				<div class="share">
 					
-					<h4>comparte:</h4>
+					<h4>SÍGUENOS:</h4>
 
 					<ul>
 						<li>
@@ -91,6 +91,7 @@
 				<div class="newsletter">
 					
 					<h4>NEWSLETTER</h4>
+					<?php $widgetNL = new WYSIJA_NL_Widget(true);echo $widgetNL->widget(array('form' => 1, 'form_type' => 'php')); ?>
 
 				</div>
 

@@ -1,3 +1,21 @@
+.scrollToTop{
+	width:40px; 
+	height:40px;
+	padding:10px; 
+	text-align:center;
+	text-decoration: none;
+	position:fixed;
+	top:75px;
+	right:40px;
+	display:none;
+	background:{color:$pri_color}
+	color: #fff;
+	font:{family:$font_hammer;size:12px;}
+	text:{transform:uppercase;}
+	&:hover{
+		text-decoration:none;
+	}
+}
 .header{
 	@include gridle_parent();
 	position: relative;

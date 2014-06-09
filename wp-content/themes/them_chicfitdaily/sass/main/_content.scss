@@ -118,6 +118,17 @@
 			text:{transform:uppercase;}
 			margin:20px 0;
 		}
+		.post_pages{
+			p{
+				margin-bottom: 10px;
+				font:{family:$font_hammer;size:14px;}
+				color:#000;
+				small{
+					font:{size:11px;}
+					color:#999;
+				}
+			}
+		}
 		.post{
 			@include gridle(12, xs sm);
 			@include gridle(12, md);
