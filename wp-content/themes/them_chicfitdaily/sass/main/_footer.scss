@@ -95,8 +95,8 @@
 	}
 	.share{
 		@extend .us;
-		@include gridle_state(sm){
-			clear: left;
+		@include responsive('max-width:1024px'){
+			clear:left;
 		}
 		ul{
 			@extend .inline;
