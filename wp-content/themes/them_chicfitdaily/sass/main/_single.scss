@@ -156,6 +156,17 @@
 					}
 				}
 			}
+			.view_comments{
+				@include gridle_float(right);
+				.btn_comment{
+					text:{transform:uppercase;decoration:none;}
+					font:{size:18px;family:$font_fjalla;style:italic;}
+					color: #fff;
+					padding:5px;
+					background:{color:$pri-color;}
+					cursor:pointer;
+				}
+			}
 		}
 		.addthis_toolbox{
 			@extend .hide;

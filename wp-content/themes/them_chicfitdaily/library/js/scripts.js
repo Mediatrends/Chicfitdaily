@@ -164,5 +164,15 @@ jQuery(document).ready(function($) {
     label: " "
   });
 
-
+  $('.view_comments .btn_comment').toggle(function(){
+      $('.entry-content p').fadeOut(function(){
+        $('.comments').fadeIn();
+        $('.btn_comment').prepend('<span class="add_close">Cerrar</span>');
+      });
+  }, function() {
+    $('.comments').fadeOut(function(){
+      $('.entry-content p').fadeIn();
+      $('.add_close').hide();
+    });
+  });
 }); /* end of as page load scripts */

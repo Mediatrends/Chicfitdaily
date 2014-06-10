@@ -104,7 +104,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1400804065659-0');
 		
 		
 
-		<h2>LO MAS RECIENTE</h2>
+		<h2>LO MAS RECIENTE en <?php echo get_the_title(); ?></h2>
 		<?php
 			// the query
 			$the_query = new WP_Query('category_name=tonificacion,brazos,piernas,hombros'); ?>

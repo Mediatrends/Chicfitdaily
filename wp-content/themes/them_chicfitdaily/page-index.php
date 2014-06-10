@@ -102,13 +102,14 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1400804065659-0');
 
 	<section class="reciente">
 		
-		
 
 		<h2>LO MAS RECIENTE</h2>
 		<?php
 			// the query
-			$the_query = new WP_Query('category_name=tonificacion,cardio,compras-inteligentes-2,habitos,jugos,accesorios,brazos,running,comer-bien,dietas,comidas,vestuario,piernas,quemadores,tips-comidas,snack,musica,hombros,poteinas,alimentos-buenos,tendencias'); ?>
-			
+			$the_query = new WP_Query('pages=paged&posts_per_page=3&category_name=tonificacion,cardio,compras-inteligentes-2,habitos,jugos,accesorios,brazos,running,comer-bien,dietas,comidas,vestuario,piernas,quemadores,tips-comidas,snack,musica,hombros,poteinas,alimentos-buenos,tendencias'); ?>
+
+
+
 			<?php if ( $the_query->have_posts() ) : ?>
 
 				<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
@@ -142,13 +143,14 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1400804065659-0');
 						
 				<?php endwhile; ?>
 			  <!-- end of the loop -->
-			  <!-- pagination here -->
+				<!-- pagination here -->
 
 			<?php wp_reset_postdata(); ?>
 
 			<?php else:  ?>
 			<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 		<?php endif; ?>
+
 
 	</section>
 

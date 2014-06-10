@@ -200,5 +200,23 @@
 				}
 			}
 		}
+		.pagination{
+			@include gridle_clear(both);
+			@include gridle(12);
+			padding:20px 0;
+			.page-numbers{
+				@extend .inline;
+				li{
+					padding:5px;
+					background:{color:$pri_color;}
+					font:{family:$font_fjalla;size:14;style:italic;}
+					color:#fff;
+					a{
+						color:#fff;
+						text:{decoration:none;}
+					}
+				}
+			}
+		}
 	}
 }

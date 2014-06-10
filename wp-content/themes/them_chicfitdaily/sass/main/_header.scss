@@ -1,5 +1,5 @@
 .scrollToTop{
-	@include gridle_state(xs sm){
+	@include responsive('max-width:1024px') {
 		display: none !important;
 	}
 	width:40px; 
@@ -41,16 +41,22 @@
 						width: 100%;
 					}
 					a{
-					display: block;
-					color:#000;
-					height: 37px;
-					padding:25px 25px 0;
-					text:{decoration:none;transform:uppercase;}
-					&:hover{
-						//background:{color:$pri_color;}
-						color:$sec_color;
+						display: block;
+						color:#000;
+						height: 37px;
+						padding:25px 25px 0;
+						text:{decoration:none;transform:uppercase;}
+						&:hover{
+							//background:{color:$pri_color;}
+							color:$sec_color;
+						}
+						&.current-menu-item{
+							color:$sec_color;
+						}
 					}
-				}
+					&.current-menu-item{
+						a{color:$pri_color;}
+					}
 				}
 			}
 			.search{

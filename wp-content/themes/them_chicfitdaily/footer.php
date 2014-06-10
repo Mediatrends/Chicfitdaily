@@ -44,7 +44,7 @@
 					<h4>ABOUT US</h4>
 					<nav>
 						<ul class="about">
-							<li><a href="<?php echo get_page_link(84); ?>">acerca de</a></li>
+							<li><a href="/about-us">acerca de</a></li>
 							<li><a href="">escribe aquí</a></li>
 							<li><a href="">contáctanos</a></li>
 						</ul>

@@ -73,6 +73,11 @@
 
                     <?php //printf( __( '<time class="updated" datetime="%1$s" pubdate>%2$s</time> <!--by <span class="author">%3$s</span-->', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), get_the_author_link( get_the_author_meta( 'ID' ) )); ?>
                     
+                    <div class="view_comments">
+                      <div class="btn_comment">
+                        Comentarios
+                      </div>
+                    </div>
                   </div>
 
                 
@@ -99,6 +104,25 @@
                       'link_after'  => '</span>',
                     ) );
                   ?>
+                  <div class="comments hide">
+
+                          <div id="disqus_thread"></div>
+                          <script type="text/javascript">
+                              /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                              var disqus_shortname = 'chicfitdaily'; // required: replace example with your forum shortname
+
+                              /* * * DON'T EDIT BELOW THIS LINE * * */
+                              (function() {
+                                  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                              })();
+                          </script>
+                          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+                      
+                  </div>
 
                 </section> <?php // end article section ?>
 
