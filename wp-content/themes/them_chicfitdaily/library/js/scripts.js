@@ -175,4 +175,6 @@ jQuery(document).ready(function($) {
       $('.add_close').hide();
     });
   });
+
+  $('aside').fixTo('.content');
 }); /* end of as page load scripts */

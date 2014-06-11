@@ -106,6 +106,7 @@
 		<?php wp_footer(); ?>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/responsiveslides.min.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/responsive-nav.min.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/fixto.min.js"></script>
 	</body>
 
 </html> <!-- end of site. what a ride! -->
