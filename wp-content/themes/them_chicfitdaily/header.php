@@ -56,49 +56,58 @@
 		<?php // end analytics ?>
 
 		<?php //TAG DOUBLECLICK ?>
+		
+		<?php //async tag ?>
 		<script type='text/javascript'>
-		var googletag = googletag || {};
-		googletag.cmd = googletag.cmd || [];
-		(function() {
-		var gads = document.createElement('script');
-		gads.async = true;
-		gads.type = 'text/javascript';
-		var useSSL = 'https:' == document.location.protocol;
-		gads.src = (useSSL ? 'https:' : 'http:') + 
-		'//www.googletagservices.com/tag/js/gpt.js';
-		var node = document.getElementsByTagName('script')[0];
-		node.parentNode.insertBefore(gads, node);
-		})();
+			var googletag = googletag || {};
+			googletag.cmd = googletag.cmd || [];
+				(function() {
+					var gads = document.createElement('script');
+					gads.async = true;
+					gads.type = 'text/javascript';
+					var useSSL = 'https:' == document.location.protocol;
+					gads.src = (useSSL ? 'https:' : 'http:') + 
+					'//www.googletagservices.com/tag/js/gpt.js';
+					var node = document.getElementsByTagName('script')[0];
+					node.parentNode.insertBefore(gads, node);
+				})
+				();
 		</script>
 
 		<script type='text/javascript'>
-		googletag.cmd.push(function() {
-		googletag.defineSlot('/92947493/320x50_CFD', [320, 50], 'div-gpt-ad-1403288421040-0').addService(googletag.pubads());
-		googletag.pubads().enableSingleRequest();
-		googletag.enableServices();
-		});
+			googletag.cmd.push(function() {
+				googletag.defineSlot('/92947493/160X600_CFD', [160, 600], 'div-gpt-ad-1403886142152-0').addService(googletag.pubads());
+				googletag.defineSlot('/92947493/160x600_CFD_right', [160, 600], 'div-gpt-ad-1403886142152-1').addService(googletag.pubads());
+				googletag.defineSlot('/92947493/300X250_CFD', [300, 250], 'div-gpt-ad-1403886142152-2').addService(googletag.pubads());
+				googletag.defineSlot('/92947493/320x50_CFD', [320, 50], 'div-gpt-ad-1403886142152-3').addService(googletag.pubads());
+				googletag.defineSlot('/92947493/728X90_CFD', [728, 90], 'div-gpt-ad-1403886142152-4').addService(googletag.pubads());
+				googletag.defineSlot('/92947493/728x90_CFD_cont', [728, 90], 'div-gpt-ad-1403886142152-5').addService(googletag.pubads());
+				googletag.enableServices();
+				googletag.pubads().enableSingleRequest();
+			});
 		</script>
 
 	</head>
 
 	<body <?php body_class(); ?>>
-
-		<div class="ad_mobile hide">
-			
-			<!-- 320x50_CFD_mobile -->
-			<div id='div-gpt-ad-1403288421040-0' style='width:320px; height:50px;margin:0 auto;'>
-			<script type='text/javascript'>
-			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1403288421040-0'); });
-			</script>
-			</div>
-
+	
+	<div class="ad_mobile hide">
+		
+		<!-- 320x50_CFD_mobile -->
+		<div id='div-gpt-ad-1403886142152-3' style='margin:0 auto;width:300px; height:50px;'>
+		<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1403886142152-3'); });
+		</script>
 		</div>
-		<?php include (TEMPLATEPATH . '/svg_cont.php'); ?>
 
-		<a href="#" class="scrollToTop">
-			<img src="<?php echo get_template_directory_uri(); ?>/img/top_fle.png" alt="">
-			Subir
-		</a>
+	</div>
+
+	<?php include (TEMPLATEPATH . '/svg_cont.php'); ?>
+
+	<a href="#" class="scrollToTop">
+		<img src="<?php echo get_template_directory_uri(); ?>/img/top_fle.png" alt="">
+		Subir
+	</a>
 
 		<div class="spinner">
 		  <div class="double-bounce1"></div>
@@ -122,7 +131,12 @@
 						<div class="ad_header">
 							<div class="zone_728x90">
 								
-						
+								<!-- 728X90_CFD -->
+								<div id='div-gpt-ad-1403886142152-4' style='width:728px; height:90px;'>
+								<script type='text/javascript'>
+								googletag.cmd.push(function() { googletag.display('div-gpt-ad-1403886142152-4'); });
+								</script>
+								</div>
 
 							</div>
 						</div>
@@ -159,5 +173,5 @@
 					</nav>
 
 			</header>
-
+			
 			<article class="content">

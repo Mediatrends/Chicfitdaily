@@ -64,7 +64,7 @@
                 <section class="clear entry-content" itemprop="articleBody">
                   
 
-                  <img src="<?php the_field('img_post'); ?>" alt="" class="responsive-img">
+                  <img src="<?php the_field('imagen_post_normal'); ?>" alt="" class="responsive-img">
                   
 
                   <div class="meta">
@@ -139,7 +139,15 @@
                 
                 <div class="ad_content">
                   <div class="zone_728x90">
+                        
+<!-- 728x90_CFD_cont -->
+<div id='div-gpt-ad-1403886142152-5' style='width:728px; height:90px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1403886142152-5'); });
+</script>
+</div>
 
+                        
                   </div>
                 </div>
 

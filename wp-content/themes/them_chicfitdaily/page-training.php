@@ -26,7 +26,7 @@
 
 					<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-				        <li id="post-<?php the_ID(); ?>" <?php post_class( '' ); ?> style="background-image:url('<?php the_field('img_post'); ?>');">
+				        <li id="post-<?php the_ID(); ?>" <?php post_class( '' ); ?> style="background-image:url('<?php the_field('post_banner'); ?>');">
 								
 							<a class="post-link" href="<?php the_permalink() ?>" rel="single" rel="bookmark" title="<?php the_title_attribute(); ?>">
 								<!--div class="category">
@@ -90,7 +90,12 @@
 	<div class="ad_content">
 		<div class="zone_728x90">
 			
-
+<!-- 728x90_CFD_cont -->
+<div id='div-gpt-ad-1403886142152-5' style='width:728px; height:90px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1403886142152-5'); });
+</script>
+</div>
 
 		</div>
 	</div>

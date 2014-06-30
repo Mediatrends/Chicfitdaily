@@ -2,6 +2,12 @@
 
 	<section class="zone_300x250">
 		
+<!-- 300X250_CFD -->
+<div id='div-gpt-ad-1403886142152-2' style='width:300px; height:250px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1403886142152-2'); });
+</script>
+</div>
 
 	</section>
 	
@@ -25,7 +31,7 @@
 
 						<h3><?php echo get_the_title(); ?></h3>
 
-						<?php the_excerpt(); ?>
+						<p><?php echo substr(get_the_excerpt(), 0,184); ?></p>
 					</a>
 					<?php the_tags( '<ul class="tags"><li>',' ','</li></ul>' ); ?>
 

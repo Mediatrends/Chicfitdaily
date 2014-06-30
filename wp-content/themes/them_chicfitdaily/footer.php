@@ -11,8 +11,25 @@
 
 			<div class="ad_lateral">
 				
-				<div class="zone_160x600 ad01"></div>
-				<div class="zone_160x600 ad02"></div>
+				<div class="zone_160x600 ad01">
+
+<!-- 160X600_CFD_left -->
+<div id='div-gpt-ad-1403886142152-0' style='width:160px; height:600px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1403886142152-0'); });
+</script>
+</div>				
+				</div>
+				<div class="zone_160x600 ad02">
+					
+<!-- 160x600_CFD_right -->
+<div id='div-gpt-ad-1403886142152-1' style='width:160px; height:600px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1403886142152-1'); });
+</script>
+</div>
+
+				</div>
 
 			</div>
 
