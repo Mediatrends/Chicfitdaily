@@ -37,15 +37,15 @@
 		@include gridle_parent();
 		.cont_menu{
 			ul{
-				@extend .inline;
+				//@extend .inline;
 				@include gridle(9);
-				font:{family:$font_hammer;size:14px;}
+				font:{family:$font_hammer;size:12px;}
 				a{
 					display: block;
 					color:#999;
 					padding:10px 0;
 					width:90px;
-					text:{decoration:none;}
+					text:{decoration:none;transform:capitalize;}
 					&:hover{
 						color:$pri_color;
 					}
@@ -78,10 +78,10 @@
 		nav{
 			@include gridle_parent();
 			.about{
-				@extend .inline;
+				//@extend .inline;
 				@include gridle(9);
-				font:{family:$font_hammer;size:14px;}
-				text:{transform:uppercase;}
+				font:{family:$font_hammer;size:12px;}
+				text:{transform:capitalize;}
 				a{
 					display: block;
 					color:#999;
@@ -147,6 +147,9 @@
 					color:#fff;
 					text:{transform:uppercase;}
 					margin: 0;
+					@include gridle_state(webkit_brw){
+						font:{size:9px;}
+					}
 				}
 			}
 		}

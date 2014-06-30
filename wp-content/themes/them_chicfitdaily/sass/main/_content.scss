@@ -79,14 +79,14 @@
 					//hightligt
 					.tit{
 						width: 100%;
+						padding:10px 0;
 						margin-bottom: 1rem;
 						position: absolute;
 						bottom: -18px;
 						@extend .text-center;
 						font:{size:29px;family:$font_fjalla;}
-						line-height: 40px;
 						color: #fff;
-						background:{color:rgba(200,153,153,.7);}
+						background:{color:$pri_color;}
 					}
 				}
 			}
