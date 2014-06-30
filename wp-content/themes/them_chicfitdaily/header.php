@@ -56,7 +56,6 @@
 		<?php // end analytics ?>
 
 		<?php //TAG DOUBLECLICK ?>
-
 		<script type='text/javascript'>
 		var googletag = googletag || {};
 		googletag.cmd = googletag.cmd || [];
@@ -73,24 +72,33 @@
 		</script>
 
 		<script type='text/javascript'>
-			googletag.cmd.push(function() {
-				googletag.defineSlot('/20099485/Chic_INX_content', [728, 90], 'div-gpt-ad-1400804065659-0').addService(googletag.pubads());
-				googletag.defineSlot('/20099485/Chic_INX_header', [728, 90], 'div-gpt-ad-1400804065659-1').addService(googletag.pubads());
-				googletag.defineSlot('/20099485/Chic_INX_sidebar', [300, 250], 'div-gpt-ad-1400804065659-2').addService(googletag.pubads());
-				googletag.defineSlot('/20099485/Chic_SNG_content', [728, 90], 'div-gpt-ad-1400804065659-3').addService(googletag.pubads());
-				googletag.enableServices();
-			});
+		googletag.cmd.push(function() {
+		googletag.defineSlot('/92947493/320x50_CFD', [320, 50], 'div-gpt-ad-1403288421040-0').addService(googletag.pubads());
+		googletag.pubads().enableSingleRequest();
+		googletag.enableServices();
+		});
 		</script>
 
 	</head>
 
 	<body <?php body_class(); ?>>
-	<?php include (TEMPLATEPATH . '/svg_cont.php'); ?>
 
-	<a href="#" class="scrollToTop">
-		<img src="<?php echo get_template_directory_uri(); ?>/img/top_fle.png" alt="">
-		Subir
-	</a>
+		<div class="ad_mobile hide">
+			
+			<!-- 320x50_CFD_mobile -->
+			<div id='div-gpt-ad-1403288421040-0' style='width:320px; height:50px;margin:0 auto;'>
+			<script type='text/javascript'>
+			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1403288421040-0'); });
+			</script>
+			</div>
+
+		</div>
+		<?php include (TEMPLATEPATH . '/svg_cont.php'); ?>
+
+		<a href="#" class="scrollToTop">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/top_fle.png" alt="">
+			Subir
+		</a>
 
 		<div class="spinner">
 		  <div class="double-bounce1"></div>
@@ -114,12 +122,7 @@
 						<div class="ad_header">
 							<div class="zone_728x90">
 								
-								<!-- Chic_INX_header -->
-								<div id='div-gpt-ad-1400804065659-1' style='width:728px; height:90px;'>
-								<script type='text/javascript'>
-								googletag.cmd.push(function() { googletag.display('div-gpt-ad-1400804065659-1'); });
-								</script>
-								</div>
+						
 
 							</div>
 						</div>

@@ -139,12 +139,7 @@
                 
                 <div class="ad_content">
                   <div class="zone_728x90">
-                    <!-- Chic_SNG_content -->
-                    <div id='div-gpt-ad-1400804065659-3' style='width:728px; height:90px;'>
-                      <script type='text/javascript'>
-                      googletag.cmd.push(function() { googletag.display('div-gpt-ad-1400804065659-3'); });
-                      </script>
-                    </div>
+
                   </div>
                 </div>
 

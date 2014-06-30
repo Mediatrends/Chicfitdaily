@@ -1,6 +1,14 @@
 			</article>
 			<div id="push"></div>
 			
+			<script>
+
+				jQuery(document).ready(function($){
+					$('.ad_lateral').fixTo('main');
+				});
+
+			</script>
+
 			<div class="ad_lateral">
 				
 				<div class="zone_160x600 ad01"></div>

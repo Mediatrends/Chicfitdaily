@@ -1,21 +1,20 @@
 .ad_lateral{
-	@extend .hide;
-	position: fixed;
-	top:0;
 	max-width: 1500px;
 	width:100%;
 	margin: 0 auto;
-	left: 0;
-	right: 0;
 	height: 100%;
 	z-index: 2;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top:0;
 	@include responsive("max-width:1490px"){
 		display:none;
 	}
 	.zone_160x600{
 		width:160px;
 		height: 600px;
-		margin-top: 10%;
+		margin-top: 13%;
 		&.ad01{
 			@include gridle_float(left);
 		}
@@ -32,7 +31,7 @@
 	z-index: 1;
 	@include gridle_state(xs){
 		height: 490px !important;
-		padding-bottom:20px;
+		padding-bottom:80px;
 	}
 	nav{
 		@include gridle_parent();

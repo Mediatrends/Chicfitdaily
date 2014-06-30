@@ -812,7 +812,8 @@ $_gridle-state-15-classes 			: true !default;
 		@if type-of($_state-or-min-width) == string and $gridle-html-states-classes {
 			// html class :
 			@if $has-parent {
-				html#{_gridle_prefixed_class("#{$_state-or-min-width}")} & { @content; }
+				//html#{_gridle_prefixed_class("#{$_state-or-min-width}")} & { @content; }
+				html#{_gridle_prefixed_class("#{$_state-or-min-width}")} { @content; }
 			} @else {
 				html#{_gridle_prefixed_class("#{$_state-or-min-width}")} { @content; }
 			}
@@ -1501,7 +1502,7 @@ $_gridle-state-15-classes 			: true !default;
 		@if $i > 1 {
 			$useful-states-classes : "#{$useful-states-classes},";
 		}
-		$useful-states-classes : "#{$useful-states-classes}\"#{nth($gridle-generate-useful-states-classes,$i)}\"";
+		//$useful-states-classes : "#{$useful-states-classes}\"#{nth($gridle-generate-useful-states-classes,$i)}\"";
 	}
 	$useful-states-classes : "#{$useful-states-classes}]";
 	$gridle-settings : "#{$gridle-settings}, \"generateUsefulStatesClasses\" : #{$useful-states-classes}";
