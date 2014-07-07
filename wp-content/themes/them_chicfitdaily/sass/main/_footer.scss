@@ -29,9 +29,13 @@
 	background:{color:$gris_color;}
 	position: relative;
 	z-index: 1;
-	@include gridle_state(xs){
-		height: 490px !important;
+	@include gridle_state(xs) {
 		padding-bottom:80px;
+		height: auto !important;
+	}
+	@include gridle_state(sm) {
+		padding-bottom:10px;
+		height: 391px;
 	}
 	nav{
 		@include gridle_parent();
@@ -39,7 +43,7 @@
 			ul{
 				//@extend .inline;
 				@include gridle(9);
-				font:{family:$font_hammer;size:12px;}
+				font:{family:$font_hammer;size:15px;}
 				a{
 					display: block;
 					color:#999;
@@ -57,7 +61,7 @@
 		}
 	}	
 	.us{
-		@include gridle(12, xs);
+		@include gridle(6, xs);
 		@include gridle(6, sm);
 		@include gridle(3, md);
 		margin-top:20px;
@@ -80,7 +84,7 @@
 			.about{
 				//@extend .inline;
 				@include gridle(9);
-				font:{family:$font_hammer;size:12px;}
+				font:{family:$font_hammer;size:15px;}
 				text:{transform:capitalize;}
 				a{
 					display: block;
@@ -97,6 +101,7 @@
 	}
 	.share{
 		@extend .us;
+		@include gridle(12, xs);
 		@include responsive('max-width:1024px'){
 			clear:left;
 		}
@@ -116,6 +121,7 @@
 	}
 	.newsletter{
 		@extend .us;
+		@include gridle(12, xs);
 		.php_wysija{
 			.updated{
 				background:{color:$pri_color;}

@@ -47,7 +47,7 @@
 				@extend .inline;
 				@include gridle(12, xs);
 				@include gridle(9, sm);
-				font:{family:$font_hammer;size:14px;}
+				font:{family:$font_hammer;size:14px;weight:600;}
 				li{
 					@include gridle_state(xs){
 						width: 100%;
@@ -80,14 +80,15 @@
 						@include gridle_float(right);
 						input{
 							border:none;
-							@extend .text-right;
+							@extend .text-left;
 							padding-right:10px;
 							@include placeholder(){
 								color:#000;
 								font:{
-									size:12px;
-									weight:bold;
+									size:15px;
 									style:italic;
+									family:$font_hammer;
+									weight:600;
 								}
 								@include opacity(1);
 							}

@@ -72,7 +72,7 @@
 		}
 	}
 }
-@include sticky-footer(370px, "#container", "#push", "#footer");
+@include sticky-footer(400px, "#container", "#push", "#footer");
 
 //PALCEHOLDER
 @mixin placeholder {

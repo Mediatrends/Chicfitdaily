@@ -13,21 +13,22 @@
 				
 				<div class="zone_160x600 ad01">
 
-<!-- 160X600_CFD_left -->
-<div id='div-gpt-ad-1404152523663-0' style='width:160px; height:600px;'>
-<script type='text/javascript'>
-googletag.cmd.push(function() { googletag.display('div-gpt-ad-1404152523663-0'); });
-</script>
-</div>			
+					<!-- 160X600_CFD_left -->
+					<div id='div-gpt-ad-1404152523663-0' style='width:160px; height:600px;'>
+					<script type='text/javascript'>
+					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1404152523663-0'); });
+					</script>
+					</div>
+						
 				</div>
 				<div class="zone_160x600 ad02">
 					
-<!-- 160x600_CFD_right -->
-<div id='div-gpt-ad-1404152523663-1' style='width:160px; height:600px;'>
-<script type='text/javascript'>
-googletag.cmd.push(function() { googletag.display('div-gpt-ad-1404152523663-1'); });
-</script>
-</div>
+					<!-- 160x600_CFD_right -->
+					<div id='div-gpt-ad-1404152523663-1' style='width:160px; height:600px;'>
+					<script type='text/javascript'>
+					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1404152523663-1'); });
+					</script>
+					</div>
 
 				</div>
 
@@ -70,8 +71,8 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1404152523663-1');
 					<nav>
 						<ul class="about">
 							<li><a href="/about-us">acerca de</a></li>
-							<li><a href="">escribe aquí</a></li>
-							<li><a href="">contáctanos</a></li>
+							<li><a href="mailto:chicfitdaily@gmail.com">contacto editorial</a></li>
+							<li><a href="mailto:alvaro@mediatrends.cl">contacto publicitario</a></li>
 						</ul>
 					</nav>
 					
