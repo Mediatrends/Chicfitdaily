@@ -143,7 +143,7 @@ jQuery(document).ready(function($) {
     nextText: ""
   });
 
-  $('#slide').mouseover(function(){
+  /*$('#slide').mouseover(function(){
         $('#slide .next').animate({
             right: '73px'
         }, 500);
@@ -151,14 +151,14 @@ jQuery(document).ready(function($) {
             left: '73px'
         }, 500);
     });
-    $('#slide').mouseleave(function(){
-        $('#slide .next').animate({
-            right: '-73px'
-        }, 500);
-        $('#slide .prev').animate({
-            left: '-73px'
-        }, 500);
-    });
+  $('#slide').mouseleave(function(){
+      $('#slide .next').animate({
+          right: '-73px'
+      }, 500);
+      $('#slide .prev').animate({
+          left: '-73px'
+      }, 500);
+  });*/
 
   var nav = responsiveNav(".cont_menu", {
     label: " "

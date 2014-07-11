@@ -16,6 +16,7 @@
 <?php get_header(); ?>
 
 <section class="cont_post">
+
 	<section id="slide">
 		<ul>
 			<?php 
@@ -26,36 +27,26 @@
 
 					<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-				        <li id="post-<?php the_ID(); ?>" <?php post_class( '' ); ?> style="background-image:url('<?php the_field('post_banner'); ?>');">
+				        <li id="post-<?php the_ID(); ?>" <?php post_class( '' ); ?> style="background-image:url('<?php the_field('imagen_post_banner'); ?>');">
 								
 							<a class="post-link" href="<?php the_permalink() ?>" rel="single" rel="bookmark" title="<?php the_title_attribute(); ?>">
 								<div class="category">
 									
-									<?php
-										$posttags = get_the_tags();
-										$count=0;
-										if ($posttags) {
-										  foreach($posttags as $tag) {
-										    $count++;
-										    if (1 == $count) {
-										      echo $tag->name . ' ';
-										    }
-										  }
-										}
-									?>
-
+									<?php //$posttags = get_the_tags(); $count=0; if ($posttags) { foreach($posttags as $tag) { $count++; if (1 == $count) { echo $tag->name . ' '; } } }?>
+									
+									Lo último
 								</div>
 								
-								<div class="fecha">
+								<!--div class="fecha">
 									
-									<?php echo get_the_date('j'); ?>
+									<?php //echo get_the_date('j'); ?>
 									<br>
-									<span><?php echo get_the_date('M'); ?></span>
+									<span><?//php echo get_the_date('M'); ?></span>
 
-								</div>
+								</div-->
 
 								<div class="tit">
-									<?php echo substr(the_title($before = '', $after = '', FALSE), 0, 40); ?><br>
+									<?php echo substr(the_title($before = '', $after = '', FALSE), 0, 140); ?><br>
 									<!--?php echo get_the_date();?><br>
 									<?php
 										$posttags = get_the_tags();
@@ -104,49 +95,59 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1404152523663-5');
 	<section class="reciente">
 		<h2>LO MAS RECIENTE en <?php echo get_the_title(); ?></h2>
 		<?php
-			// the query
-			$the_query = new WP_Query('category_name=cardio,running,quemadores,poteinas'); ?>
-			
-			<?php if ( $the_query->have_posts() ) : ?>
+		    // paging variable
+		    $paged = (get_query_var('page')) ? get_query_var('page') : 1;
 
-				<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+		    // the arguments
+		    $args = array(
+		        'post_type'         =>  'post',
+		        'category_name'     =>  'cardio,running,quemadores,poteinas',
+		        'posts_per_page'    =>  3,
+		        'paged'             =>  $paged,
+		    ); 
+		    // assign arguments to new WP_Query
+		    $wp_query = new WP_Query( $args );
+		    // start the loop
+		    while( $wp_query->have_posts() ) :
+		           $wp_query->the_post();
+		?>
+		    <div id="post-<?php the_ID(); ?>" <?php post_class( 'post' ); ?> r>
 						
-					<div id="post-<?php the_ID(); ?>" <?php post_class( 'post' ); ?> r>
+				<a class="post-link" href="<?php the_permalink() ?>" rel="single" rel="bookmark" title="<?php the_title_attribute(); ?>">
+					
+					<div class="post_img" style="background-image:url('<?php the_field('imagen_post_normal'); ?>');">
 						
-						<a class="post-link" href="<?php the_permalink() ?>" rel="single" rel="bookmark" title="<?php the_title_attribute(); ?>">
+						<!--div class="fecha">
 							
-							<div class="post_img" style="background-image:url('<?php the_field('img_post'); ?>');">
-								
-								<!--div class="fecha">
-									
-									<?php echo get_the_date('j'); ?>
-									<br>
-									<span><?php echo get_the_date('M'); ?></span>
+							<?php echo get_the_date('j'); ?>
+							<br>
+							<span><?php echo get_the_date('M'); ?></span>
 
-								</div-->
+						</div-->
 
-							</div>
-
-							<h3><?php echo substr(the_title($before = '', $after = '', FALSE), 0, 42); ?></h3>
-							<h4><?php echo get_the_date(''); ?></h4>
-							<p><?php echo substr(get_the_excerpt(), 0,184); ?></p>
-						</a>
-						<?php the_tags( '<ul class="tags"><li>',' ','</li></ul>' ); ?>
-
-						<div class="more">
-							<a href="<?php the_permalink() ?>"></a>
-						</div>
 					</div>
-						
-				<?php endwhile; ?>
-			  <!-- end of the loop -->
-			  <!-- pagination here -->
 
-			<?php wp_reset_postdata(); ?>
+					<h3><?php echo substr(the_title($before = '', $after = '', FALSE), 0, 42); ?></h3>
+					<h4><?php echo get_the_date(''); ?></h4>
+					<p><?php echo substr(get_the_excerpt(), 0,184); ?></p>
+				</a>
+				<?php the_tags( '<ul class="tags"><li>',' ','</li></ul>' ); ?>
 
-			<?php else:  ?>
-			<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-		<?php endif; ?>
+				<div class="more">
+					<a href="<?php the_permalink() ?>"></a>
+				</div>
+			</div>
+		<?php endwhile; ?>
+
+		<div class="post_nav">
+		    <div class="nav_prev">
+		    	<?php previous_posts_link('Anterior') ?>
+		    </div>
+		    <div class="nav_next">
+		    	<?php next_posts_link('Siguiente') ?>
+		    </div>
+		</div>
+		<?php wp_reset_postdata(); // fixes bug where below ACF fields wont display ?>
 
 	</section>
 

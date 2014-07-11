@@ -22,6 +22,9 @@
 		<?php $page_id = 84; $page_data = get_page( $page_id );echo '<h2>'. $page_data->post_title .'</h2>'; ?>
 		<div class="post_pages">
 			<?php echo apply_filters('the_content', $page_data->post_content); ?>
+
+			<?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+			<img src="<?php echo $feat_image;?>" alt="" width="100%">
 		</div>
 
 	</section>

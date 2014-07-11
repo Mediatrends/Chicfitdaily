@@ -20,6 +20,9 @@
 		height:442px;
 		overflow: hidden;
 		position: relative;
+		@include gridle_state(xs) {
+			height: 242px;
+		}
 		ul{
 			position: relative;
 			list-style: none;
@@ -38,6 +41,9 @@
 				background:{
 					size:cover;
 					position:center;
+				}
+				@include gridle_state(xs){
+					height: 242px;
 				}
 				&:first-child {
 					position: relative;
@@ -86,32 +92,36 @@
 						@extend .text-center;
 						font:{size:29px;family:$font_fjalla;}
 						color: #fff;
-						background:{color:$pri_color;}
+						background:{color:rgba(0,0,0,.5);}
 					}
 				}
 			}
 		}
 		.prev{
 			display: block;
-			width:73px;
-			height: 73px;
-			margin-left: -73px;
-			margin-top:-250px;
+			width:35px;
+			height: 35px;
+			margin-left: 0px;
+			margin-top:-230px;
 			@include gridle_float(left);
 			position: relative;
 			z-index: 9;
-			background:{image:url('#{$url_path}flechas_slide2.png');repeat:no-repeat;position: 27px center;}
+			background:{image:url('#{$url_path}flechas_slide.gif');repeat:no-repeat;position:8px center;color:$pri_color;}
+			@include gridle_state(xs){
+				margin-top: -150px;
+			}
 		}
 		.next{
 			@extend .prev;
 			@include gridle_float(right);
-			margin-right: -73px;
-			background:{position: -20px center;}
+			margin-right: 0;
+			background:{position:-38px center;}
 		}
 	}
 	.reciente{
 		@include gridle_parent();
 		@include gridle(12);
+		border-top:solid 1px #eee;
 		h2{
 			color:$pri_color;
 			font:{size:26px;family:$font_fjalla;}
@@ -219,6 +229,35 @@
 						color:#fff;
 						text:{decoration:none;}
 					}
+				}
+			}
+		}
+		.post_nav{
+			@include gridle(12);
+			@include gridle_clear(both);
+			padding:10px;
+			.nav_next{
+				display: table;
+				height: 30px;
+				@include gridle_float(right);
+				a{
+					display: table-cell;
+					border: 1px solid $pri_color;
+					height: 30px;
+					background:{image:url('#{$url_path}flecha_navpost_nxt.gif');size:auto 100%;position: 66px center;repeat:no-repeat;}
+					vertical-align: middle;
+					font:{family:$font_hammer;size:13px;}
+					color: $pri_color;
+					padding: 0px 39px 0px 4px;
+					text:{decoration:none;}
+				}
+			}
+			.nav_prev{
+				@extend .nav_next;
+				@include gridle_float(left);
+				a{
+					background:{image:url('#{$url_path}flecha_navpost_prv.gif');position:0 center;}
+					padding: 0px 11px 0px 39px;
 				}
 			}
 		}

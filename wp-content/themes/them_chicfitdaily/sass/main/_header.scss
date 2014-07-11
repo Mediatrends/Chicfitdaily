@@ -82,8 +82,11 @@
 							border:none;
 							@extend .text-left;
 							padding-right:10px;
+							height: 21px;
+							font-size: 13px;
 							@include placeholder(){
 								color:#000;
+								padding-bottom:10px;
 								font:{
 									size:15px;
 									style:italic;

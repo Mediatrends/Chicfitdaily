@@ -19,6 +19,34 @@
 		<meta name="MobileOptimized" content="320">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+		<!-- Schema.org markup for Google+ -->
+		<meta itemprop="name" content="<?php wp_title(''); ?>">
+		<meta itemprop="description" content="<?php bloginfo('description'); ?>">
+		<meta itemprop="image" content="">
+
+		<!-- Twitter Card data -->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@chicfitdaily">
+		<meta name="twitter:title" content="<?php wp_title(''); ?>">
+		<meta name="twitter:description" content="">
+		<!--meta name="twitter:creator" content="@author_handle"-->
+		<!-- Twitter summary card with large image must be at least 280x150px -->
+		<meta name="twitter:image:src" content="">
+
+		<!-- Open Graph data -->
+		<meta property="og:title" content="<?php wp_title(''); ?>" />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="<?php the_permalink() ?>" />
+		<meta property="og:image" content="" />
+		<meta property="og:description" content="<?php bloginfo('description'); ?>" />
+		<meta property="og:site_name" content="Chc Fit Daily" />
+		<meta property="article:published_time" content="<?php the_time('j F Y'); ?>" />
+		<!--meta property="article:modified_time" content="" /-->
+		<!--meta property="article:section" content="Article Section"/-->
+		<meta property="article:tag" content="<?php $posttags = get_the_tags();if ($posttags) {foreach($posttags as $tag) {echo $tag->name . ','; }}?>" />
+		<!--meta property="fb:admins" content="Facebook numberic ID" /--> 
+
+
 		<?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) ?>
 		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-icon-touch.png">
 		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
@@ -92,7 +120,7 @@
 	<div class="ad_mobile hide">
 		
 		<!-- 320x50_CFD_mobile -->
-<div id='div-gpt-ad-1404152523663-3' style='width:320px; height:50px;'>
+<div id='div-gpt-ad-1404152523663-3' style='width:320px; height:50px;margin:0 auto;'>
 <script type='text/javascript'>
 googletag.cmd.push(function() { googletag.display('div-gpt-ad-1404152523663-3'); });
 </script>
