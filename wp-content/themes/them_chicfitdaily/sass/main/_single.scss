@@ -14,7 +14,7 @@
 		margin-top:20px;
 		header{
 			h2{
-				color:$pri_color;
+				color:#000;
 				font:{size:45px;family:$font_fjalla;}
 				text:{transform:uppercase};
 				@include gridle_state(xs) {
@@ -59,11 +59,21 @@
 						background: {
 							position:13px;
 						}
+						@include gridle_state(xs){
+							background:{position:11px center;}
+						}
 					}
 					&.nav_next{
 						background: {
 							position:-13px;
 						}
+						@include gridle_state(xs){
+							background:{position:-11px center;}
+						}
+					}
+					@include gridle_state(xs){
+						width:30px;
+						height: 30px;
 					}
 				}
 				.nextxt{
@@ -79,6 +89,9 @@
 						color: $pri_color;
 						padding:0 2px;
 					}
+					@include gridle_state(xs){
+						height:28px;
+					}
 				}
 				
 			}
@@ -88,6 +101,7 @@
 				}
 				@include gridle_float(right);
 				@include gridle_hide(xs);
+				@include border-radius(50%);
 				display: table;
 				color:#fff;
 				width:40px;
@@ -119,6 +133,7 @@
 						background:{color:$pri_color;}
 						overflow: hidden;
 						position: relative;
+						@include border-radius(50%);
 						&.at15t_google_plusone_share{
 							background: {image:url('#{$url_path}icon_sgoplus.gif');position: center;size:80%;}
 						}
@@ -149,10 +164,13 @@
 					@extend .inline;
 					a{
 						text:{transform:uppercase;decoration:none;}
-						font:{size:18px;family:$font_fjalla;style:italic;}
+						font:{size:18px;family:$font_fjalla;}
 						color: #fff;
 						padding:2px 5px;
 						background:{color:$pri-color;}
+						@include gridle_state(xs){
+							font:{size:10px;}
+						}
 					}
 				}
 			}
@@ -160,42 +178,68 @@
 				@include gridle_float(right);
 				.btn_comment{
 					text:{transform:uppercase;decoration:none;}
-					font:{size:18px;family:$font_fjalla;style:italic;}
+					font:{size:18px;family:$font_fjalla;}
 					color: #fff;
 					padding:5px;
 					background:{color:$pri-color;}
 					cursor:pointer;
+					@include gridle_state(xs){
+						font:{size:10px;}
+					}
 				}
 			}
 		}
 		.addthis_toolbox{
 			@extend .hide;
 		}
-		p{
-			@include gridle_clear(both);
-			padding-top:10px;
-			font:{size:15px;family:$font_hammer;}
-			line-height: 1.5em;
-			color: #555;
-			iframe{
-				width: 100%;
-				height: 450px;
+		.img-posts{
+			background:{repeat:no-repeat;size:cover;position: center;}
+			width:100%;
+			min-height: 400px;
+			@include gridle_state(xs){
+				min-height:130px;
 			}
 		}
-		.gallery{
-			.gallery-item{
-				width: 45%;
-				float: left;
-				padding: 5px;
-				img{
-					width: 100%;
-					height: auto;
+		.content_posts{
+			img{
+				@extend .responsive-img;
+				height: auto;
+			}
+			p{
+				@include gridle_clear(both);
+				padding-top:10px;
+				font:{size:15px;family:$font_hammer;}
+				line-height: 1.5em;
+				color: #555;
+				a{
+					color: $pri-color;
+					&:hover{
+						color: $sec_color;
+						text:{decoration:none;}
+					}
+					&:visited{
+						color: $gris_color;
+						text:{decoration:none;}
+					}
 				}
 			}
-		}
-		iframe{
-			width:100%;
-			height: 480px;
+			.gallery{
+				.gallery-item{
+					width: 45%;
+					float: left;
+					padding: 5px;
+					img{
+						width: 100%;
+						height: auto;
+					}
+				}
+			}
+			iframe{
+				width: 100%;
+				&.youtube{
+					height: 450px;
+				}
+			}
 		}
 		.ad_content{
 			@include gridle(12);

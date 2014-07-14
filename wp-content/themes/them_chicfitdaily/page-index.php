@@ -20,7 +20,7 @@
 		<ul>
 			<?php 
 				// the query
-				$the_query = new WP_Query('category_name=slide'); ?>
+				$the_query = new WP_Query('category_name=slide&posts_per_page=-1'); ?>
 				
 				<?php if ( $the_query->have_posts() ) : ?>
 
@@ -100,8 +100,8 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1404152523663-5');
 		    // the arguments
 		    $args = array(
 		        'post_type'         =>  'post',
-		        'category_name'     =>  'tonificacion,cardio,compras-inteligentes-2,habitos,jugos,accesorios,brazos,running,comer-bien,dietas,comidas,vestuario,piernas,quemadores,tips-comidas,snack,musica,hombros,poteinas,alimentos-buenos,tendencias',
-		        'posts_per_page'    =>  3,
+		        'category_name'     =>  'tonificacion,piernas,brazos,abs,espalda,pushup,squats,gluteos,hombros,musculo,rutina,workout,fuerza,circuito,maquinas,implementos,grasa,suplementos,proteinas,quemadores,pre-entrenamiento,verano,bikini,inspiracion,perdida-de-peso,vegetales,frutas,jugos,semillas,legumbres,carbohidratos,snacks,recetas,sano,look,prendas,esenciales,belleza,musica,tendencias,spotify,videos,accesorios,running,jogging,pilates,yoga,asanas,calentamiento,elongacion,flexibilidad,danza,rutina,recuperacion,acondicionamiento,trx,referentes,crossfit,sueno,descanso,nutricion,habitos,dietas,lesiones,imc,confianza',
+		        'posts_per_page'    =>  5,
 		        'paged'             =>  $paged,
 		    ); 
 		    // assign arguments to new WP_Query

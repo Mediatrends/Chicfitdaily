@@ -165,16 +165,16 @@ jQuery(document).ready(function($) {
   });
 
   $('.view_comments .btn_comment').toggle(function(){
-      $('.entry-content p').fadeOut(function(){
+      $('.entry-content .content_posts').fadeOut(function(){
         $('.comments').fadeIn();
         $('.btn_comment').prepend('<span class="add_close">Cerrar</span>');
       });
   }, function() {
     $('.comments').fadeOut(function(){
-      $('.entry-content p').fadeIn();
+      $('.entry-content .content_posts').fadeIn();
       $('.add_close').hide();
     });
   });
 
-  $('aside').fixTo('.content');
+  $('.ad01, .ad02').fixTo('body');
 }); /* end of as page load scripts */

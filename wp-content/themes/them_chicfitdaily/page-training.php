@@ -20,7 +20,7 @@
 		<ul>
 			<?php 
 				// the query
-				$the_query = new WP_Query('category_name=slide'); ?>
+				$the_query = new WP_Query('category_name=slide&posts_per_page=-1'); ?>
 				
 				<?php if ( $the_query->have_posts() ) : ?>
 
@@ -101,8 +101,8 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1404152523663-5');
 		    // the arguments
 		    $args = array(
 		        'post_type'         =>  'post',
-		        'category_name'     =>  'tonificacion,brazos,piernas,hombros',
-		        'posts_per_page'    =>  3,
+		        'category_name'     =>  'tonificacion,piernas,brazos,abs,espalda,pushup,squats,gluteos,hombros,musculo,rutina,workout,fuerza,circuito,maquinas,implementos',
+		        'posts_per_page'    =>  5,
 		        'paged'             =>  $paged,
 		    ); 
 		    // assign arguments to new WP_Query

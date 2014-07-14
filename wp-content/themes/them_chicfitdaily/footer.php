@@ -1,13 +1,5 @@
 			</article>
 			<div id="push"></div>
-			
-			<script>
-
-				jQuery(document).ready(function($){
-					$('.ad_lateral').fixTo('main');
-				});
-
-			</script>
 
 			<div class="ad_lateral">
 				

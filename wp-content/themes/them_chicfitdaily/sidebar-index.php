@@ -17,7 +17,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1404153073027-0');
 
 		<?php
 		// the query
-		$the_query = new WP_Query('posts_per_page=1&category_name=destacado&order=DESC'); ?>
+		$the_query = new WP_Query('posts_per_page=2&category_name=destacado&order=DESC'); ?>
 		
 		<?php if ( $the_query->have_posts() ) : ?>
 
@@ -27,7 +27,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1404153073027-0');
 					
 					<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" class="sidebar_a">
 						
-						<div class="post_img" style="background-image:url('<?php the_field('img_post'); ?>');"></div>
+						<div class="post_img" style="background-image:url('<?php the_field('imagen_post_normal'); ?>');"></div>
 
 						<h3><?php echo get_the_title(); ?></h3>
 
@@ -38,7 +38,8 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1404153073027-0');
 					<div class="more">
 						<a href="<?php the_permalink() ?>"></a>
 					</div>
-
+					
+					
 				</section>
 				
 		<?php endwhile; ?>
