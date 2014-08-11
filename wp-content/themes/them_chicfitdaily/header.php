@@ -103,28 +103,19 @@
 
 		<script type='text/javascript'>
 		googletag.cmd.push(function() {
-		googletag.defineSlot('/92947493/160X600_CFD', [160, 600], 'div-gpt-ad-1404152523663-0').addService(googletag.pubads());
-		googletag.defineSlot('/92947493/160x600_CFD_right', [160, 600], 'div-gpt-ad-1404152523663-1').addService(googletag.pubads());
-		googletag.defineSlot('/92947493/300X250_CFD', [300, 250], 'div-gpt-ad-1404153073027-0').addService(googletag.pubads());
-		googletag.defineSlot('/92947493/320x50_CFD', [320, 50], 'div-gpt-ad-1404152523663-3').addService(googletag.pubads());
-		googletag.defineSlot('/92947493/728X90_CFD', [728, 90], 'div-gpt-ad-1404152523663-4').addService(googletag.pubads());
-		googletag.defineSlot('/92947493/728x90_CFD_cont', [728, 90], 'div-gpt-ad-1404152523663-5').addService(googletag.pubads());
+		googletag.defineSlot('/92947493/300X250_CFD_sidebar_2', [300, 250], 'div-gpt-ad-1406309379089-0').addService(googletag.pubads());
 		googletag.pubads().enableSingleRequest();
 		googletag.enableServices();
 		});
 		</script>
+
 	</head>
 
 	<body <?php body_class(); ?>>
 	
 	<div class="ad_mobile hide">
-		
-		<!-- 320x50_CFD_mobile -->
-<div id='div-gpt-ad-1404152523663-3' style='width:320px; height:50px;margin:0 auto;'>
-<script type='text/javascript'>
-googletag.cmd.push(function() { googletag.display('div-gpt-ad-1404152523663-3'); });
-</script>
-</div>
+
+<iframe id='a450c758' name='a450c758' src='http://ads.adnetwork.cl/www/delivery/afr.php?resize=1&amp;zoneid=173&amp;target=_blank&amp;cb={random}&amp;ct0={clickurl}' frameborder='0' scrolling='no' width='300' height='50'><a href='http://ads.adnetwork.cl/www/delivery/ck.php?n=ae03d71e&amp;cb={random}' target='_blank'><img src='http://ads.adnetwork.cl/www/delivery/avw.php?zoneid=173&amp;cb={random}&amp;n=ae03d71e&amp;ct0={clickurl}' border='0' alt='' /></a></iframe>
 
 	</div>
 
@@ -135,10 +126,10 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1404152523663-3');
 		Subir
 	</a>
 
-		<div class="spinner">
+		<!--div class="spinner">
 		  <div class="double-bounce1"></div>
 		  <div class="double-bounce2"></div>
-		</div>
+		</div-->
 	
 		<main id="container">
 
@@ -157,12 +148,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1404152523663-3');
 						<div class="ad_header">
 							<div class="zone_728x90">
 								
-								<!-- 728X90_CFD -->
-<div id='div-gpt-ad-1404152523663-4' style='width:728px; height:90px;'>
-<script type='text/javascript'>
-googletag.cmd.push(function() { googletag.display('div-gpt-ad-1404152523663-4'); });
-</script>
-</div>
+<iframe id='a3f4fb22' name='a3f4fb22' src='http://ads.adnetwork.cl/www/delivery/afr.php?resize=1&amp;zoneid=183&amp;target=_blank&amp;cb={random}&amp;ct0={clickurl}' frameborder='0' scrolling='no' width='728' height='90'><a href='http://ads.adnetwork.cl/www/delivery/ck.php?n=a3a6a402&amp;cb={random}' target='_blank'><img src='http://ads.adnetwork.cl/www/delivery/avw.php?zoneid=183&amp;cb={random}&amp;n=a3a6a402&amp;ct0={clickurl}' border='0' alt='' /></a></iframe>
 
 							</div>
 						</div>

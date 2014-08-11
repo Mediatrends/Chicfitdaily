@@ -223,6 +223,25 @@
 					}
 				}
 			}
+			.bx-wrapper{
+				margin:{top:20px;left:auto;right:auto;}
+				.bx-viewport{
+					border: none;
+					background: none;
+					box-shadow: none;
+					left:inherit !important;
+					ul{
+						li{
+							width:auto !important;
+							img{
+								min-width: 100%;
+								display: block;
+								width:100%;
+							}
+						}
+					} 
+				}
+			}
 			.gallery{
 				.gallery-item{
 					width: 45%;

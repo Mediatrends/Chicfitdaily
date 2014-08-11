@@ -107,11 +107,11 @@ function loadGravatars() {
 */
 jQuery(document).ready(function($) {
 
-  $(window).load(function(){
+  /*$(window).load(function(){
     $('.spinner').fadeOut(500,function(){
        $('main, footer').fadeIn();
     });
-  });
+  });*/
   $('a.nav_prev, a.nav_next, .more a, a.sidebar_a, .tags li a, .logo a, a.post-link, .nav li a').click(function(){
     $('main, footer').fadeOut(function(){
       $('.spinner').fadeIn();
