@@ -101,6 +101,29 @@ function loadGravatars() {
 	}
 } // end function
 
+//validacion formulario de busqueda
+function LimpiaEspacios(Obj){
+  var texto = Obj.value;
+  //limpiamos de espacios en blanco el texto
+  var texto_limpio = texto.replace(/^\s+|\s+$/g,"");
+  if (texto_limpio==""){
+  Obj.value = "";
+  Obj.focus();
+  return true;
+}
+  else
+  {
+  return false;
+  }
+}
+
+function valida_form(){
+  if (LimpiaEspacios(document.frm.s)){
+    jQuery('#search_input').css('border','#F99 solid 1px').attr("placeholder", "Busca algo en nuestro blog");
+  return false;
+  }
+  return true;
+}
 
 /*
  * Put all your regular jQuery in here.
