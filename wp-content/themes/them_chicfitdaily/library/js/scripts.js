@@ -124,7 +124,16 @@ function valida_form(){
   }
   return true;
 }
-
+ //FEED INSTAGRAM
+ var feed = new Instafeed({
+    get: 'user',
+    userId:1021323093,
+    accessToken:'641827348.467ede5.82e872aed9ed4959a3ee985d62781c51',
+    clientId: 'cd33a91424cc4cf8a6aaac7db1f6e955',
+    template:'<a href="{{link}}" target="_blank"><div class="cont_igfeed"><img src="{{image}}" alt="" /></div></a>',
+    limit:6
+});
+feed.run();
 /*
  * Put all your regular jQuery in here.
 */

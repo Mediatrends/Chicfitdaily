@@ -20,13 +20,14 @@
 	text-align:center;
 	text-decoration: none;
 	position:fixed;
-	top:75px;
-	right:40px;
+	bottom:10px;
+	right:10px;
 	display:none;
 	background:{color:$pri_color}
 	color: #fff;
 	font:{family:$font_hammer;size:12px;}
 	text:{transform:uppercase;}
+	z-index: 2;
 	&:hover{
 		text-decoration:none;
 	}

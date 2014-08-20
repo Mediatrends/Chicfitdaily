@@ -3,24 +3,38 @@
 	@include gridle(4, md);
 	margin-top: 20px;
 	padding-bottom: 10px;
+	h2{
+		color:#000;
+		font:{size:26px;family:$font_fjalla;}
+		text:{transform:uppercase;}
+		margin: 20px 0px 10px;
+	}
 	.zone_300x250{
-		@include gridle_state(xs sm){
-			display: $hide;
-		}
 		width:300px;
 		height:250px;
 		margin-bottom: 10px;
-		@include gridle_centered(md);
+		@include gridle_centered();
+	}
+	#instafeed{
+		width:300px;
+		height:450px;
+		margin: 0 auto;
+		a{
+			display: block;
+			.cont_igfeed{
+				@include gridle(6);
+				@include gridle_parent();
+				img{
+					width:100%;
+					height: auto;
+				}
+			}
+		}
+		
 	}
 	.descatado{
 		@include gridle(12);
 		@include gridle_clear();
-		h2{
-			color:#000;
-			font:{size:26px;family:$font_fjalla;}
-			text:{transform:uppercase;}
-			margin: 20px 0px 10px;
-		}
 		.post{
 			margin-bottom: 20px;
 			min-height:382px;

@@ -2,18 +2,37 @@
 
 	<section class="zone_300x250">
 		
-<!-- 300X250_CFD -->
-<div id='div-gpt-ad-1404153073027-0' style='width:300px; height:250px;'>
-<script type='text/javascript'>
-googletag.cmd.push(function() { googletag.display('div-gpt-ad-1404153073027-0'); });
-</script>
-</div>
+		<!-- 300X250_CFD_sidebar_2 -->
+		<div id='div-gpt-ad-1408556541799-0'>
+		<script type='text/javascript'>
+		googletag.display('div-gpt-ad-1408556541799-0');
+		</script>
+		</div>
 
 	</section>
-	
-	<section class="descatado">
 
-		<h2>DESTACADOS</h2>
+	<section class="zone_300x250">
+
+		<!-- 300X250_CFD -->
+		<div id='div-gpt-ad-1408556681507-2'>
+		<script type='text/javascript'>
+		googletag.display('div-gpt-ad-1408556681507-2');
+		</script>
+		</div>
+
+	</section>
+
+	<h2>instagram</h2>
+
+	<div id="instafeed"></div>
+
+	<h2>facebook</h2>
+
+	<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fchicfitdaily&amp;width=300px&amp;height=200&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=true&amp;appId=266876090132202" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300pxpx; height:200px;margin:0 auto;display:block;" allowTransparency="true"></iframe>
+	
+	<h2>DESTACADOS</h2>
+
+	<section class="descatado">
 
 		<?php
 		// the query

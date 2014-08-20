@@ -6,9 +6,9 @@
 				<div class="zone_160x600 ad01">
 
 					<!-- 160X600_CFD_left -->
-					<div id='div-gpt-ad-1404152523663-0' style='width:160px; height:600px;'>
+					<div id='div-gpt-ad-1408556681507-0'>
 					<script type='text/javascript'>
-					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1404152523663-0'); });
+					googletag.display('div-gpt-ad-1408556681507-0');
 					</script>
 					</div>
 						
@@ -16,9 +16,9 @@
 				<div class="zone_160x600 ad02">
 					
 					<!-- 160x600_CFD_right -->
-					<div id='div-gpt-ad-1404152523663-1' style='width:160px; height:600px;'>
+					<div id='div-gpt-ad-1408556681507-1'>
 					<script type='text/javascript'>
-					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1404152523663-1'); });
+					googletag.display('div-gpt-ad-1408556681507-1');
 					</script>
 					</div>
 
@@ -121,10 +121,13 @@
 
 		
 		<?php // all js scripts are loaded in library/bones.php ?>
-		<?php wp_footer(); ?>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/responsiveslides.min.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/responsive-nav.min.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/fixto.min.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/instafeed.min.js"></script>
+		<?php wp_footer(); ?>
+		
+
 	</body>
 
 </html> <!-- end of site. what a ride! -->
