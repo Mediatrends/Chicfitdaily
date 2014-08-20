@@ -147,7 +147,7 @@
 						<div class="ad_header">
 							<div class="zone_728x90">
 								
-<iframe id='a3f4fb22' name='a3f4fb22' src='http://ads.adnetwork.cl/www/delivery/afr.php?resize=1&amp;zoneid=183&amp;target=_blank&amp;cb={random}&amp;ct0={clickurl}' frameborder='0' scrolling='no' width='728' height='90'><a href='http://ads.adnetwork.cl/www/delivery/ck.php?n=a3a6a402&amp;cb={random}' target='_blank'><img src='http://ads.adnetwork.cl/www/delivery/avw.php?zoneid=183&amp;cb={random}&amp;n=a3a6a402&amp;ct0={clickurl}' border='0' alt='' /></a></iframe>
+								<iframe id='a3f4fb22' name='a3f4fb22' src='http://ads.adnetwork.cl/www/delivery/afr.php?resize=1&amp;zoneid=183&amp;target=_blank&amp;cb={random}&amp;ct0={clickurl}' frameborder='0' scrolling='no' width='728' height='90'><a href='http://ads.adnetwork.cl/www/delivery/ck.php?n=a3a6a402&amp;cb={random}' target='_blank'><img src='http://ads.adnetwork.cl/www/delivery/avw.php?zoneid=183&amp;cb={random}&amp;n=a3a6a402&amp;ct0={clickurl}' border='0' alt='' /></a></iframe>
 
 							</div>
 						</div>
@@ -182,6 +182,41 @@
 						</div>
 						
 					</nav>
+
+					<div class="redes_top">
+						
+						<ul>
+							<li>
+								<a href="http://www.facebook.com/chicfitdaily" target="_blank">
+									<svg viewBox="23.5 23.5 20 20">
+										<use xlink:href="#svg_facebook"/>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.twitter.com/chicfitdaily" target="_blank">
+									<svg viewBox="23.5 23.5 20 20">
+										<use xlink:href="#svg_twitter"/>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="" target="_blank">
+									<svg viewBox="23.5 23.5 20 20">
+										<use xlink:href="#svg_pinterest"/>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="http://instagram.com/chicfitdaily" target="_blank">
+									<svg viewBox="23.5 23.5 20 20">
+										<use xlink:href="#svg_instagram"/>
+									</svg>
+								</a>
+							</li>
+						</ul>
+
+					</div>
 
 			</header>
 			

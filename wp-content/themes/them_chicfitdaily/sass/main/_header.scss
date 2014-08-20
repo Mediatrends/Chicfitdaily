@@ -150,4 +150,44 @@
 			}
 		}
 	}
+	.redes_top{
+		@extend .content;
+		@include gridle_parent();
+		background:{color:$pri_color;}
+		height:40px;
+		ul{
+			li{
+				@include gridle(3);
+				@include gridle_parent();
+				height: 40px;
+				padding-top: 5px;
+				a{
+					display: block;
+					height: 35px;
+					@extend .text-center;
+					svg{
+						width:35px;
+						height:35px;
+						margin:0 auto;
+						use{
+							path{
+								fill:#fff !important;
+							}
+						}
+					}
+				}
+				&:hover{
+					a{
+						svg{
+							use{
+								path{
+									fill:$sec_color !important;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
