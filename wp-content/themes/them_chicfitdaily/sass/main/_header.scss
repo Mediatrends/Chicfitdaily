@@ -170,9 +170,7 @@
 						height:35px;
 						margin:0 auto;
 						use{
-							path{
-								fill:#fff !important;
-							}
+							fill:#fff;
 						}
 					}
 				}
@@ -180,9 +178,7 @@
 					a{
 						svg{
 							use{
-								path{
-									fill:$sec_color !important;
-								}
+								fill:$sec_color;
 							}
 						}
 					}
