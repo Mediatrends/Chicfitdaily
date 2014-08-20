@@ -40,7 +40,7 @@
 						
 								<a class="post-link" href="<?php the_permalink() ?>" rel="single" rel="bookmark" title="<?php the_title_attribute(); ?>">
 									
-									<div class="post_img" style="background-image:url('<?php the_field('img_post'); ?>');">
+									<div class="post_img" style="background-image:url('<?php the_field('imagen_post_normal'); ?>');">
 										
 										<div class="fecha">
 											

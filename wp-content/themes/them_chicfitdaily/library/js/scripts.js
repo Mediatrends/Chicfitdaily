@@ -208,5 +208,6 @@ jQuery(document).ready(function($) {
     });
   });
 
-  $('.ad01, .ad02').fixTo('body');
+  $('.ad_fix').fixTo('#container');
+  $('.ad_fix2').fixTo('#container');
 }); /* end of as page load scripts */

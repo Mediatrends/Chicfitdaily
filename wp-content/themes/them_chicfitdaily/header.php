@@ -110,7 +110,7 @@
 		</script>
 	</head>
 
-	<body <?php body_class(); ?>>
+	<body <?php body_class('fixed_ads'); ?>>
 	
 	<div class="ad_mobile hide">
 		
