@@ -80,14 +80,15 @@
 	<div class="ad_content">
 		<div class="zone_728x90">
 			
-<?php include (TEMPLATEPATH . '/ad_cont_all.php'); ?>
+			<?php include (TEMPLATEPATH . '/ad_cont_all.php'); ?>
+
 		</div>
 	</div>
 
 	<section class="reciente">
 
 		<h2>LO MAS RECIENTE</h2>
-
+	
 		<?php
 		    // paging variable
 		    $paged = (get_query_var('page')) ? get_query_var('page') : 1;

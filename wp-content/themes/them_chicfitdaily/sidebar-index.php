@@ -22,7 +22,7 @@
 
 	</section>
 
-	<h2>instagram</h2>
+	<h2>instagram follower</h2>
 
 	<div id="instafeed"></div>
 

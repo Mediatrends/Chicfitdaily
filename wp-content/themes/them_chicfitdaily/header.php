@@ -103,11 +103,13 @@
 		googletag.defineSlot('/92947493/320x50_CFD', [320, 50], 'div-gpt-ad-1408556681507-3').addService(googletag.pubads());
 		googletag.defineSlot('/92947493/728X90_CFD', [728, 90], 'div-gpt-ad-1408556681507-4').addService(googletag.pubads());
 		googletag.defineSlot('/92947493/728x90_CFD_cont', [728, 90], 'div-gpt-ad-1408556681507-5').addService(googletag.pubads());
-
+		googletag.defineOutOfPageSlot('/20099485/CFD_publipost_loop', 'div-gpt-ad-1409083371256-0-oop').addService(googletag.pubads());
+		googletag.defineOutOfPageSlot('/20099485/CFD_publipost', 'div-gpt-ad-1409083311364-0-oop').addService(googletag.pubads());
 		googletag.pubads().enableSyncRendering();
 		googletag.pubads().enableSingleRequest();
 		googletag.enableServices();
 		</script>
+	
 	</head>
 
 	<body <?php body_class('fixed_ads'); ?>>

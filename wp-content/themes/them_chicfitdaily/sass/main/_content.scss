@@ -198,6 +198,15 @@
 					line-height: 1.5em;
 					color:#555;
 				}
+				&.publipost_href{
+					.publipost{
+						@include gridle(12);
+						background:{color:rgba(255,153,153,.4);}
+						h4{
+							color:#fff;
+						}
+					}
+				}
 			}
 			.tags{
 				padding-top:10px;
@@ -209,6 +218,10 @@
 						color: #fff;
 						padding:2px 5px;
 						background:{color:$pri-color;}
+						img{
+							width: 45px;
+							margin-left: 10px;
+						}
 					}
 				}
 			}

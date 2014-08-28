@@ -205,6 +205,9 @@
 				@extend .responsive-img;
 				height: auto;
 			}
+			a{
+				text:{decoration:none;}
+			}
 			p{
 				@include gridle_clear(both);
 				padding-top:10px;

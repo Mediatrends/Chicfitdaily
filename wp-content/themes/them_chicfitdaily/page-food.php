@@ -80,14 +80,65 @@
 	<div class="ad_content">
 		<div class="zone_728x90">
 			
-<?php include (TEMPLATEPATH . '/ad_cont_all.php'); ?>
+			<?php include (TEMPLATEPATH . '/ad_cont_all.php'); ?>
 
 		</div>
 	</div>
 
 	<section class="reciente">
 		<h2>LO MAS RECIENTE en <?php echo get_the_title(); ?></h2>
+
+		<?php //native ads ?>
 		
+				<?php
+		    // paging variable
+		    $paged = (get_query_var('page')) ? get_query_var('page') : 1;
+
+		    // the arguments
+		    $args = array(
+		        'post_type'         =>  'custom_type',
+		        'custom_cat'     	=>  'publipost',
+		        'posts_per_page'    =>  1
+		    ); 
+		    // assign arguments to new WP_Query
+		    $wp_query = new WP_Query( $args );
+		    // start the loop
+		    while( $wp_query->have_posts() ) :
+		           $wp_query->the_post();
+		?>
+		    <div id="post-<?php the_ID(); ?>" <?php post_class( 'post publipost_cont' ); ?>>
+
+				<div id='div-gpt-ad-1409083371256-0-oop'>
+				<script type='text/javascript'>
+				googletag.display('div-gpt-ad-1409083371256-0-oop');
+				</script>
+				</div>
+
+				<!--a class="post-link publipost_href" href="<?php the_permalink() ?>" rel="single" rel="bookmark" title="<?php the_title_attribute(); ?>">
+					
+					<div class="post_img" style="background-image:url('<?php the_field('imagen_post_normal'); ?>');"></div>
+
+					<div class="publipost">
+						
+						<h3><?php echo substr(the_title($before = '', $after = '', FALSE), 0, 42); ?></h3>
+						<h4><?php echo get_the_date(''); ?></h4>
+						<p><?php echo substr(get_the_excerpt(), 0,184); ?></p>
+
+					</div>
+						
+				</a>
+				<?php the_tags( '<ul class="tags"><li>',' ','</li></ul>' ); ?>
+
+				<div class="more">
+					<a href="<?php the_permalink() ?>"></a>
+				</div>
+				<div class="present">
+					Presentado por {{logo de la marca}}
+				</div-->
+			</div>
+		<?php endwhile; ?>
+
+		<?php //fin native ad ?>
 		<?php
 		    // paging variable
 		    $paged = (get_query_var('page')) ? get_query_var('page') : 1;
