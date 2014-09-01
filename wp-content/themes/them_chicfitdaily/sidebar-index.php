@@ -1,24 +1,23 @@
 <aside id="sidebar1" class="sidebar" role="complementary">
 
 	<section class="zone_300x250">
-		
-		<!-- 300X250_CFD_sidebar_2 -->
-		<div id='div-gpt-ad-1408556541799-0'>
-		<script type='text/javascript'>
-		googletag.display('div-gpt-ad-1408556541799-0');
-		</script>
-		</div>
+	
+		<!-- 300X250_CFD -->
+<div id='div-gpt-ad-1409582659049-2'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1409582659049-2'); });
+</script>
+</div>
 
 	</section>
 
 	<section class="zone_300x250">
-
-		<!-- 300X250_CFD -->
-		<div id='div-gpt-ad-1408556681507-2'>
-		<script type='text/javascript'>
-		googletag.display('div-gpt-ad-1408556681507-2');
-		</script>
-		</div>
+		<!-- 300X250_CFD_sidebar_2 -->
+<div id='div-gpt-ad-1409582659049-3'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1409582659049-3'); });
+</script>
+</div>	
 
 	</section>
 

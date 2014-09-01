@@ -84,30 +84,34 @@
 		<?php // end analytics ?>
 
 		<?php //TAG DOUBLECLICK ?>
-		
-		<?php //sync tag ?>
 		<script type='text/javascript'>
+		var googletag = googletag || {};
+		googletag.cmd = googletag.cmd || [];
 		(function() {
+		var gads = document.createElement('script');
+		gads.async = true;
+		gads.type = 'text/javascript';
 		var useSSL = 'https:' == document.location.protocol;
-		var src = (useSSL ? 'https:' : 'http:') +
+		gads.src = (useSSL ? 'https:' : 'http:') + 
 		'//www.googletagservices.com/tag/js/gpt.js';
-		document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+		var node = document.getElementsByTagName('script')[0];
+		node.parentNode.insertBefore(gads, node);
 		})();
 		</script>
 
 		<script type='text/javascript'>
-		googletag.defineSlot('/92947493/300X250_CFD_sidebar_2', [300, 250], 'div-gpt-ad-1408556541799-0').addService(googletag.pubads());
-		googletag.defineSlot('/92947493/160X600_CFD', [160, 600], 'div-gpt-ad-1408556681507-0').addService(googletag.pubads());
-		googletag.defineSlot('/92947493/160x600_CFD_right', [160, 600], 'div-gpt-ad-1408556681507-1').addService(googletag.pubads());
-		googletag.defineSlot('/92947493/300X250_CFD', [300, 250], 'div-gpt-ad-1408556681507-2').addService(googletag.pubads());
-		googletag.defineSlot('/92947493/320x50_CFD', [320, 50], 'div-gpt-ad-1408556681507-3').addService(googletag.pubads());
-		googletag.defineSlot('/92947493/728X90_CFD', [728, 90], 'div-gpt-ad-1408556681507-4').addService(googletag.pubads());
-		googletag.defineSlot('/92947493/728x90_CFD_cont', [728, 90], 'div-gpt-ad-1408556681507-5').addService(googletag.pubads());
-		googletag.defineOutOfPageSlot('/20099485/CFD_publipost_loop', 'div-gpt-ad-1409083371256-0-oop').addService(googletag.pubads());
-		googletag.defineOutOfPageSlot('/20099485/CFD_publipost', 'div-gpt-ad-1409083311364-0-oop').addService(googletag.pubads());
-		googletag.pubads().enableSyncRendering();
+		googletag.cmd.push(function() {
+		googletag.defineSlot('/92947493/160X600_CFD', [160, 600], 'div-gpt-ad-1409582659049-0').addService(googletag.pubads());
+		googletag.defineSlot('/92947493/160x600_CFD_right', [160, 600], 'div-gpt-ad-1409582659049-1').addService(googletag.pubads());
+		googletag.defineSlot('/92947493/300X250_CFD', [300, 250], 'div-gpt-ad-1409582659049-2').addService(googletag.pubads());
+		googletag.defineSlot('/92947493/300X250_CFD_sidebar_2', [300, 250], 'div-gpt-ad-1409582659049-3').addService(googletag.pubads());
+		googletag.defineSlot('/92947493/300x50_CFD_mobile', [300, 50], 'div-gpt-ad-1409582659049-4').addService(googletag.pubads());
+		googletag.defineSlot('/92947493/728X90_CFD', [728, 90], 'div-gpt-ad-1409582659049-5').addService(googletag.pubads());
+		googletag.defineSlot('/92947493/728x90_CFD_cont', [728, 90], 'div-gpt-ad-1409582659049-6').addService(googletag.pubads());
+		googletag.defineSlot('/92947493/970x90_CFD', [970, 90], 'div-gpt-ad-1409582659049-7').addService(googletag.pubads());
 		googletag.pubads().enableSingleRequest();
 		googletag.enableServices();
+		});
 		</script>
 	
 	</head>
@@ -116,10 +120,9 @@
 	
 	<div class="ad_mobile hide">
 		
-		<!-- 320x50_CFD_mobile -->
-		<div id='div-gpt-ad-1408556681507-3'>
+		<div id='div-gpt-ad-1409582659049-4'>
 		<script type='text/javascript'>
-		googletag.display('div-gpt-ad-1408556681507-3');
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1409582659049-4'); });
 		</script>
 		</div>
 
@@ -154,10 +157,9 @@
 						<div class="ad_header">
 							<div class="zone_728x90">
 								
-								<!-- 728X90_CFD -->
-								<div id='div-gpt-ad-1408556681507-4'>
+								<div id='div-gpt-ad-1409582659049-5'>
 								<script type='text/javascript'>
-								googletag.display('div-gpt-ad-1408556681507-4');
+								googletag.cmd.push(function() { googletag.display('div-gpt-ad-1409582659049-5'); });
 								</script>
 								</div>
 
@@ -231,5 +233,12 @@
 					</div>
 
 			</header>
-			
+
+
+			<div id='div-gpt-ad-1409582659049-7' style="margin:15px auto 0 auto;width:970px;z-index:9;position: relative;">
+			<script type='text/javascript'>
+			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1409582659049-7'); });
+			</script>
+			</div>
+
 			<article class="content">
