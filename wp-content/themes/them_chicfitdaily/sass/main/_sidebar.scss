@@ -1,6 +1,6 @@
 .sidebar{
 	@include gridle(12, xs sm);
-	@include gridle(4, md);
+	@include gridle(4, md lg);
 	margin-top: 20px;
 	padding-bottom: 10px;
 	h2{

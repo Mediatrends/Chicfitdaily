@@ -7,7 +7,6 @@
 		margin: 20px 0;
 		.zone_728x90{
 			width:728px;
-			height: 90px;
 			@include gridle_state(xs){
 				display: $hide;
 			}

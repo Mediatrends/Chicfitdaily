@@ -2,22 +2,22 @@
 
 	<section class="zone_300x250">
 	
-		<!-- 300X250_CFD -->
-<div id='div-gpt-ad-1409582659049-2'>
+<!-- 300X250_CFD -->
+<div id='div-gpt-ad-1409601580575-2'>
 <script type='text/javascript'>
-googletag.cmd.push(function() { googletag.display('div-gpt-ad-1409582659049-2'); });
+googletag.display('div-gpt-ad-1409601580575-2');
 </script>
 </div>
 
 	</section>
 
 	<section class="zone_300x250">
-		<!-- 300X250_CFD_sidebar_2 -->
-<div id='div-gpt-ad-1409582659049-3'>
+<!-- 300X250_CFD_sidebar_2 -->
+<div id='div-gpt-ad-1409601580575-3'>
 <script type='text/javascript'>
-googletag.cmd.push(function() { googletag.display('div-gpt-ad-1409582659049-3'); });
+googletag.display('div-gpt-ad-1409601580575-3');
 </script>
-</div>	
+</div>
 
 	</section>
 
