@@ -231,7 +231,7 @@
 
 
 			<!-- 970x90_CFD_todo -->
-			<div id='div-gpt-ad-1409601580575-7' style="margin:15px auto 0 auto;width:970px;z-index:9;position: relative;">
+			<div id='div-gpt-ad-1409601580575-7' class="ad_970">
 			<script type='text/javascript'>
 			googletag.display('div-gpt-ad-1409601580575-7');
 			</script>

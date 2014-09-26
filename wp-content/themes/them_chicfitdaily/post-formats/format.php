@@ -71,11 +71,12 @@
 
                     <?php //printf( __( '<time class="updated" datetime="%1$s" pubdate>%2$s</time> <!--by <span class="author">%3$s</span-->', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), get_the_author_link( get_the_author_meta( 'ID' ) )); ?>
                     
-                    <div class="view_comments">
+                    <!--div class="view_comments">
                       <div class="btn_comment">
                         Comentarios
                       </div>
-                    </div>
+                    </div-->
+
                   </div>
 
                   <div class="content_posts">
@@ -104,7 +105,7 @@
                       ?>
                   </div>
                   
-                  <div class="comments hide">
+                  <div class="comments">
 
                           <div id="disqus_thread"></div>
                           <script type="text/javascript">

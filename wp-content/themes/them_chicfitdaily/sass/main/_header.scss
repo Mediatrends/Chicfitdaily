@@ -31,6 +31,13 @@
 		text-decoration:none;
 	}
 }
+.ad_970{
+	@include gridle_hide(mobile tablet);
+	margin:15px auto 0 auto;
+	width:970px;
+	z-index:9;
+	position: relative;
+}
 .header{
 	@include gridle_parent();
 	position: relative;

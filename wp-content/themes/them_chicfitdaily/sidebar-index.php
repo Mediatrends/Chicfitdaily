@@ -21,9 +21,12 @@ googletag.display('div-gpt-ad-1409601580575-3');
 
 	</section>
 
-	<h2>instagram follower</h2>
+	<h2>instagram</h2>
 
-	<div id="instafeed"></div>
+	<!--div id="instafeed"></div-->
+
+<script src="http://snapwidget.com/js/snapwidget.js"></script>
+<iframe src="http://snapwidget.com/in/?u=Y2hpY2ZpdGNoaWxlfGlufDEyNXwyfDN8fG5vfDV8ZmFkZU91dHxvblN0YXJ0fHllc3x5ZXM=&ve=220914" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe>
 
 	<h2>facebook</h2>
 
