@@ -231,10 +231,10 @@
 
 
 			<!-- 970x90_CFD_todo -->
-			<div id='div-gpt-ad-1409601580575-7' class="ad_970">
+			<!--div id='div-gpt-ad-1409601580575-7' class="ad_970">
 			<script type='text/javascript'>
 			googletag.display('div-gpt-ad-1409601580575-7');
 			</script>
-			</div>
+			</div-->
 
 			<article class="content">

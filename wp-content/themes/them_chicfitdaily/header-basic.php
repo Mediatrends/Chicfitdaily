@@ -69,67 +69,44 @@
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsive-nav.css">
 
 		<?php //TAG DOUBLECLICK ?>
+		
+		<?php //sync tag ?>
 		<script type='text/javascript'>
-(function() {
-var useSSL = 'https:' == document.location.protocol;
-var src = (useSSL ? 'https:' : 'http:') +
-'//www.googletagservices.com/tag/js/gpt.js';
-document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
-})();
-</script>
+		(function() {
+		var useSSL = 'https:' == document.location.protocol;
+		var src = (useSSL ? 'https:' : 'http:') +
+		'//www.googletagservices.com/tag/js/gpt.js';
+		document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+		})();
+		</script>
 
-<script type='text/javascript'>
-googletag.defineOutOfPageSlot('/20099485/CFD_publipost_loop', 'div-gpt-ad-1409669056186-0-oop').addService(googletag.pubads());
-googletag.defineOutOfPageSlot('/20099485/CFD_publipost', 'div-gpt-ad-1409669337649-0-oop').addService(googletag.pubads());
-googletag.pubads().enableSyncRendering();
-googletag.pubads().enableSingleRequest();
-googletag.enableServices();
-</script>
-
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/dragend.js"></script>
-<script>
-
-	jQuery(document).ready(function($){
-		$('.ad_mobile').dragend({
-			onSwipeEnd: function(){
-				$('.cont_ad').fadeIn();
-			}
-		});
-		$('.cerrar').on('click', function(){
-			$('.cont_ad').fadeOut();
-		});
-	});
-
-</script>
-
-<style>
+		<script type='text/javascript'>
+		googletag.defineSlot('/92947493/300X250_CFD_sidebar_2', [300, 250], 'div-gpt-ad-1408556541799-0').addService(googletag.pubads());
+		googletag.defineSlot('/92947493/160X600_CFD', [160, 600], 'div-gpt-ad-1408556681507-0').addService(googletag.pubads());
+		googletag.defineSlot('/92947493/160x600_CFD_right', [160, 600], 'div-gpt-ad-1408556681507-1').addService(googletag.pubads());
+		googletag.defineSlot('/92947493/300X250_CFD', [300, 250], 'div-gpt-ad-1408556681507-2').addService(googletag.pubads());
+		googletag.defineSlot('/92947493/320x50_CFD', [320, 50], 'div-gpt-ad-1408556681507-3').addService(googletag.pubads());
+		googletag.defineSlot('/92947493/728X90_CFD', [728, 90], 'div-gpt-ad-1408556681507-4').addService(googletag.pubads());
+		googletag.defineSlot('/92947493/728x90_CFD_cont', [728, 90], 'div-gpt-ad-1408556681507-5').addService(googletag.pubads());
+		googletag.defineOutOfPageSlot('/20099485/CFD_publipost_loop', 'div-gpt-ad-1409083371256-0-oop').addService(googletag.pubads());
+		googletag.defineOutOfPageSlot('/20099485/CFD_publipost', 'div-gpt-ad-1409083311364-0-oop').addService(googletag.pubads());
+		googletag.pubads().enableSyncRendering();
+		googletag.pubads().enableSingleRequest();
+		googletag.enableServices();
+		</script>
 	
-	.cont_ad{
-		display: none;
-		width:95%;
-		height:95%;
-		top:2%;
-		left:0;
-		right:0;
-		margin: 0 auto;
-		position: fixed;
-		background: #000;
-		z-index:999;
-	}
-
-</style>
 	</head>
 
 	<body <?php body_class('fixed_ads'); ?>>
 	
-	<div class="cont_ad">
-		ad content
-		<div class="cerrar">close</div>
-	</div>
-
 	<div class="ad_mobile hide">
 		
-		<div class="dragend-page">swipe ad</div>
+		<!-- 320x50_CFD_mobile -->
+		<div id='div-gpt-ad-1408556681507-3'>
+		<script type='text/javascript'>
+		googletag.display('div-gpt-ad-1408556681507-3');
+		</script>
+		</div>
 
 	</div>
 
@@ -160,7 +137,16 @@ googletag.enableServices();
 							</a>
 						</div>
 						<div class="ad_header">
-							<div class="zone_728x90"></div>
+							<div class="zone_728x90">
+								
+								<!-- 728X90_CFD -->
+								<div id='div-gpt-ad-1408556681507-4'>
+								<script type='text/javascript'>
+								googletag.display('div-gpt-ad-1408556681507-4');
+								</script>
+								</div>
+
+							</div>
 						</div>
 						
 						<?php // if you'd like to use the site description you can un-comment it below ?>

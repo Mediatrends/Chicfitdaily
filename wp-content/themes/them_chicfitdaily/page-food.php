@@ -13,7 +13,7 @@
 */
 ?>
 
-<?php get_header('basic'); ?>
+<?php get_header(); ?>
 
 <section class="cont_post">
 	<section id="slide">
@@ -80,7 +80,7 @@
 	<div class="ad_content">
 		<div class="zone_728x90">
 			
-			<?php //include (TEMPLATEPATH . '/ad_cont_all.php'); ?>
+			<?php include (TEMPLATEPATH . '/ad_cont_all.php'); ?>
 
 		</div>
 	</div>
@@ -90,7 +90,7 @@
 
 		<?php //native ads ?>
 		
-			<?php
+				<?php
 		    // paging variable
 		    $paged = (get_query_var('page')) ? get_query_var('page') : 1;
 
@@ -107,15 +107,13 @@
 		           $wp_query->the_post();
 		?>
 		    <div id="post-<?php the_ID(); ?>" <?php post_class( 'post publipost_cont' ); ?>>
-				
-				<div id='div-gpt-ad-1409669056186-0-oop'>
+
+				<div id='div-gpt-ad-1409083371256-0-oop'>
 				<script type='text/javascript'>
-				googletag.display('div-gpt-ad-1409669056186-0-oop');
+				googletag.display('div-gpt-ad-1409083371256-0-oop');
 				</script>
 				</div>
 
-
-				
 				<!--a class="post-link publipost_href" href="<?php the_permalink() ?>" rel="single" rel="bookmark" title="<?php the_title_attribute(); ?>">
 					
 					<div class="post_img" style="background-image:url('<?php the_field('imagen_post_normal'); ?>');"></div>
@@ -158,7 +156,7 @@
 		    while( $wp_query->have_posts() ) :
 		           $wp_query->the_post();
 		?>
-		    <div id="post-<?php the_ID(); ?>" <?php post_class( 'post' ); ?>>
+		    <div id="post-<?php the_ID(); ?>" <?php post_class( 'post' ); ?> r>
 						
 				<a class="post-link" href="<?php the_permalink() ?>" rel="single" rel="bookmark" title="<?php the_title_attribute(); ?>">
 					
